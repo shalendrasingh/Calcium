@@ -137,5 +137,75 @@
   font-size: 12px;
   font-weight: 500;
   margin: 15px 330px;
-  /* margin-top: 20px !important; */
+}
+
+/* body section one style code  */
+.body-section-one {
+  width: 1597px;
+  height: 700px;
+  float: left;
+  /* margin: 10px; */
+}
+.img-showcase {
+  width: 720px;
+  height: 600px;
+  float: left;
+  /* margin: 10px; */
+  margin-left: 180px;
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: contain;
+}
+
+.work-showcase {
+  width: 550px;
+  height: 600px;
+  clear: right;
+  float: right;
+  margin-right: 120px;
+}
+
+.showcase-img-1 {
+  background-size: con;
+}
+
+.workshowcase-r-box {
+  margin: 20px 30px;
+}
+/* this is code for behaviour and feedback */
+.showcase-tag {
+  margin: 10px 30px;
+}
+
+.behave-cont-1 {
+  width: 200px;
+  float: left;
+  margin: 15px 30px;
+}
+.behave-cont-2 {
+  width: 200px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
+}
+.showcase-feedback {
+  clear: left;
+}
+
+.show-caption {
+  margin: 15px 30px;
+
+  float: left;
+  clear: left;
+}
+.icon-show {
+  font-size: 30px !important;
+  float: left;
+  margin: 10px;
+  color: red;
+}
+.behave-cont-3 {
+  width: 400px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
 }
