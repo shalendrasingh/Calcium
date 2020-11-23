@@ -1,25 +1,42 @@
-.demo {
-  border: 1px solid red;
-  width: 100px;
-  height: 100px;
+h1{
+  font-size: 50px;
+}
+p{
+  line-height: 18px;
+  font-size: 20px;
 }
 #AboutMain{
     border: 1px solid red;
     width: 100%;
-    height: 800px;
+    height: 100%;
 }
 #AboutMain>div{
   border: 1px solid black;
   width: 100%;
-  height: 200px;
+  height: 350px;
+  margin-top: 50px;
+}
+.TopBox{
+  background-color: #F4F4F4;
 }
 .TopBox>div:nth-child(1),.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(1),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(1),.BottomBox>div:nth-child(2){
   border: 1px solid yellow;
   width: 55%;
-  height: 200px;
+  height: 100%;
   float: left;
 }
 .TopBox>div:nth-child(2),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(2){
   width: 40%;
-  margin-left: 10px;
+  height: 85%;
+  margin: 20px;
+}
+.Feedback{
+  position: fixed;
+  top: 190px;
+  left: 1300px;
+  background: red ;
+}
+.imgbox{
+  width: 100%;
+  height: 100%;
 }
