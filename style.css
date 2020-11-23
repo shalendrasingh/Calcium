@@ -122,6 +122,10 @@ p{
   height: 85%;
   margin: 2%;
 }
+.TopBox>div:nth-child(2){
+  margin-top: 5%;
+  height: 65%;
+}
 .Feedback{
   position: fixed;
   top: 100px;
