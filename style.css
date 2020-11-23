@@ -88,30 +88,31 @@
   color: red;
 }
 
-Style sheet for about page start */
+/* Style sheet for about page start */
 h1{
   font-size: 50px;
 }
 p{
-  line-height: 18px;
+  /* line-height: 18px; */
   font-size: 20px;
 }
 #AboutMain{
-    border: 1px solid red;
-    width: 100%;
-    height: 100%;
+    /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
 }
 #AboutMain>div{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   height: 350px;
   margin-top: 5%;
 }
-.TopBox{
+#AboutMain>div:nth-child(1){
+  height: 550px;
   background-color: #F4F4F4;
 }
 .TopBox>div:nth-child(1),.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(1),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(1),.BottomBox>div:nth-child(2){
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   width: 55%;
   height: 100%;
   float: left;
@@ -123,7 +124,7 @@ p{
 }
 .Feedback{
   position: fixed;
-  top: 190px;
+  top: 100px;
   left: 1310px; 
   background: red ;
 }
@@ -134,12 +135,28 @@ p{
 .CustomerBox>div:nth-child(1){
   text-align: center;
   width: 100%;
-  height: 50px;
-  border: 1px solid green;
+  height: 80px;
+  /* border: 1px solid green; */
 }
 .CustomerBox>div:nth-child(2){
   width: 100%;
   height: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.CustomerBox>div:nth-child(3){
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid blue; */
+}
+.CustomerLogo>div:nth-child(1),.CustomerLogo>div:nth-child(2),.CustomerLogo>div:nth-child(3),.CustomerLogo>div:nth-child(4),.CustomerLogo>div:nth-child(5),.CustomerLogo>div:nth-child(6){
+  width: 10%;
+  height: 28%;
+  /* border: 1px solid red; */
+  float: left;
+  margin: 3%;
+}
+.CustomerLogo>div:nth-child(1){
+  margin-left: 5%;
 }
 /* Style sheet for about page end */
