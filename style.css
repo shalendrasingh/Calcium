@@ -3,3 +3,23 @@
   width: 100px;
   height: 100px;
 }
+#AboutMain{
+    border: 1px solid red;
+    width: 100%;
+    height: 800px;
+}
+#AboutMain>div{
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+}
+.TopBox>div:nth-child(1),.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(1),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(1),.BottomBox>div:nth-child(2){
+  border: 1px solid yellow;
+  width: 55%;
+  height: 200px;
+  float: left;
+}
+.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(2){
+  width: 40%;
+  margin-left: 10px;
+}
