@@ -1,5 +1,89 @@
-.demo {
+/* reuseable style code for header */
+.font {
+  font-family: "Merriweather Sans", sans-serif;
+}
+.font-light {
+  font-family: "open-sans";
+}
+.textGrey {
+  color: grey;
+}
+.align {
+  text-align: center;
+}
+
+.border {
   border: 1px solid red;
-  width: 100px;
-  height: 100px;
+}
+.dash {
+  border: 1px dashed red;
+}
+.zeroPadMar {
+  padding: 0px;
+  margin: 0px;
+}
+.trueBackgroundColor {
+  background-color: #a0ece7;
+}
+
+.redBackground {
+  background-color: red;
+  color: white;
+}
+.greyBorder {
+  border: 1px solid grey;
+}
+.borderRadius {
+  border-radius: 40px;
+}
+
+/* style for header sectio */
+#header {
+  border: 1px solid red;
+  width: 1598px;
+  height: 150px;
+}
+.logo {
+  float: left;
+  clear: left;
+}
+.logoName {
+  margin-top: 25px;
+  margin-left: 200px;
+}
+
+/* style code for navbar */
+.navbar {
+  margin-top: 10px;
+  margin-right: 60px;
+  float: right;
+}
+
+.navbar > div {
+  width: 150px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+}
+
+.notice {
+  width: 1598px;
+  height: 50px;
+  margin: 20px 0px;
+  float: left;
+}
+.notice div:nth-child(1),
+.notice div:nth-child(2),
+.notice div:nth-child(3) {
+  width: 350px;
+  height: 30px;
+  float: left;
+  margin-left: 150px;
+}
+
+/* style code for icons */
+.icon-check {
+  float: left;
+  margin: 20px;
+  color: red;
 }
