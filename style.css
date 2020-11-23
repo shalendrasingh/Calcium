@@ -1,4 +1,5 @@
 /* reuseable style code for header */
+/* reuseable style code for header */
 .font {
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -30,6 +31,10 @@
   background-color: red;
   color: white;
 }
+.blueBackgroundColor {
+  background-color: #5284ed;
+  color: white;
+}
 .greyBorder {
   border: 1px solid grey;
 }
@@ -37,10 +42,10 @@
   border-radius: 40px;
 }
 
-/* style for header section */
+/* style for header sectio */
 #header {
   border: 1px solid red;
-  width: 1598px;
+  width: 1597px;
   height: 150px;
 }
 .logo {
@@ -75,7 +80,7 @@
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 350px;
+  width: 370px;
   height: 30px;
   float: left;
   margin-left: 150px;
@@ -83,46 +88,197 @@
 
 /* style code for icons */
 .icon-check {
+  font-size: 30px !important;
   float: left;
-  margin: 20px;
+  margin: 10px;
   color: red;
 }
 
+/* body intro section style code */
+.bodyIntro {
+  width: 1597px;
+  height: 400px;
+  float: left;
+}
+
+.intro-head {
+  font-size: 48px;
+  font-weight: 700;
+}
+.intro-head-div {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.intro-tag {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 24px;
+}
+
+.signup-btn-box {
+  width: 800px;
+  height: 100px;
+  /* float: left; */
+  margin: 20px auto;
+}
+.signup-btn-box div:nth-child(1),
+.signup-btn-box div:nth-child(2) {
+  width: 300px;
+  height: 50px;
+  font-weight: 600;
+  float: left;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.caption-tag {
+  float: left;
+  clear: left;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  margin: 15px 330px;
+}
+
+/* body section one style code  */
+.body-section-one {
+  width: 1597px;
+  height: 700px;
+  float: left;
+  /* margin: 10px; */
+}
+.img-showcase {
+  width: 720px;
+  height: 600px;
+  float: left;
+  /* margin: 10px; */
+  margin-left: 180px;
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: contain;
+}
+
+.work-showcase {
+  width: 550px;
+  height: 600px;
+  clear: right;
+  float: right;
+  margin-right: 120px;
+}
+
+.showcase-img-1 {
+  background-size: con;
+}
+
+.workshowcase-r-box {
+  margin: 20px 30px;
+}
+/* this is code for behaviour and feedback */
+.showcase-tag {
+  margin: 10px 30px;
+}
+
+.behave-cont-1 {
+  width: 200px;
+  float: left;
+  margin: 15px 30px;
+}
+.behave-cont-2 {
+  width: 200px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
+}
+.showcase-feedback {
+  clear: left;
+}
+
+.show-caption {
+  margin: 15px 30px;
+
+  float: left;
+  clear: left;
+}
+.icon-show {
+  font-size: 30px !important;
+  float: left;
+  margin: 10px;
+  color: red;
+}
+.behave-cont-3 {
+  width: 400px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
+}
+
+/* trust section code  */
+.border {
+  border: 1px solid red;
+  width: 900px;
+  height: 200px;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.span {
+  border: 1px solid red;
+  width: 100px;
+  height: 40px;
+  float: left;
+  margin: 0px 24px;
+  text-align: center;
+  /* margin-top: 5px; */
+}
+.a {
+  /* margin-top: 50px; */
+  /* border: 1px solid red; */
+  height: 50px;
+}
+
 /* Style sheet for about page start */
-h1{
+
+h {
   font-size: 50px;
 }
-p{
+p {
   /* line-height: 18px; */
   font-size: 20px;
 }
-#AboutMain{
-    /* border: 1px solid red; */
+#AboutMain {
+  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
 }
-#AboutMain>div{
+#AboutMain > div {
   /* border: 1px solid black; */
   width: 100%;
   height: 350px;
   margin-top: 5%;
 }
-#AboutMain>div:nth-child(1){
+#AboutMain > div:nth-child(1) {
   height: 550px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
-.TopBox>div:nth-child(1),.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(1),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(1),.BottomBox>div:nth-child(2){
+.TopBox > div:nth-child(1),
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(1),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(1),
+.BottomBox > div:nth-child(2) {
   /* border: 1px solid yellow; */
   width: 55%;
   height: 100%;
   float: left;
 }
-.TopBox>div:nth-child(2),.MiddleBox>div:nth-child(2),.BottomBox>div:nth-child(2){
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(2) {
   width: 40%;
   height: 90%;
   margin: 2%;
 }
-.TopBox>div:nth-child(2){
+.TopBox > div:nth-child(2) {
   margin-top: 5%;
   height: 65%;
 }
@@ -155,60 +311,71 @@ p{
   height: 80px;
   /* border: 1px solid green; */
 }
-.CustomerBox>div:nth-child(2){
+.CustomerBox > div:nth-child(2) {
   width: 100%;
   height: 200px;
   /* border: 1px solid red; */
 }
-.CustomerBox>div:nth-child(3){
+.CustomerBox > div:nth-child(3) {
   text-align: center;
   width: 100%;
   height: 50px;
   /* border: 1px solid blue; */
 }
-.CustomerLogo>div:nth-child(1),.CustomerLogo>div:nth-child(2),.CustomerLogo>div:nth-child(3),.CustomerLogo>div:nth-child(4),.CustomerLogo>div:nth-child(5),.CustomerLogo>div:nth-child(6){
+.CustomerLogo > div:nth-child(1),
+.CustomerLogo > div:nth-child(2),
+.CustomerLogo > div:nth-child(3),
+.CustomerLogo > div:nth-child(4),
+.CustomerLogo > div:nth-child(5),
+.CustomerLogo > div:nth-child(6) {
   width: 10%;
   height: 28%;
   /* border: 1px solid red; */
   float: left;
   margin: 3%;
 }
-.CustomerLogo>div:nth-child(1){
+.CustomerLogo > div:nth-child(1) {
   margin-left: 5%;
 }
 /* Style sheet for about page end */
 /* style for footer */
 
-#footer{
+#footer {
   background-color: rgb(226, 223, 223);
   height: 420px;
-  width: 100%;   
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-#column1,#column2,#column3,#column4{
+#column1,
+#column2,
+#column3,
+#column4 {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 20px;
 }
-#column1>a, #column2>a, #column3>a, #column4>a{
+#column1 > a,
+#column2 > a,
+#column3 > a,
+#column4 > a {
   margin-top: 5px;
   margin-bottom: 5px;
   text-decoration: none;
-   color: black; 
+  color: black;
 }
 .img {
   height: 30px;
   width: 30px;
   margin-top: 40px;
 }
-.clear{
+.clear {
   clear: both;
 }
-#column2>div{
-margin-top: 65px;
+#column2 > div {
+  margin-top: 65px;
 }
-#fb{
+#fb {
   margin-top: 180px;
 }
