@@ -30,6 +30,10 @@
   background-color: red;
   color: white;
 }
+.blueBackgroundColor {
+  background-color: #5284ed;
+  color: white;
+}
 .greyBorder {
   border: 1px solid grey;
 }
@@ -40,7 +44,7 @@
 /* style for header sectio */
 #header {
   border: 1px solid red;
-  width: 1598px;
+  width: 1597px;
   height: 150px;
 }
 .logo {
@@ -83,7 +87,55 @@
 
 /* style code for icons */
 .icon-check {
+  font-size: 30px !important;
   float: left;
-  margin: 20px;
+  margin: 10px;
   color: red;
+}
+
+/* body intro section style code */
+.bodyIntro {
+  width: 1597px;
+  height: 400px;
+  float: left;
+}
+
+.intro-head {
+  font-size: 48px;
+  font-weight: 700;
+}
+.intro-head-div {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.intro-tag {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 24px;
+}
+
+.signup-btn-box {
+  width: 800px;
+  height: 100px;
+  /* float: left; */
+  margin: 20px auto;
+}
+.signup-btn-box div:nth-child(1),
+.signup-btn-box div:nth-child(2) {
+  width: 300px;
+  height: 50px;
+  font-weight: 600;
+  float: left;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.caption-tag {
+  float: left;
+  clear: left;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  margin: 15px 330px;
+  /* margin-top: 20px !important; */
 }
