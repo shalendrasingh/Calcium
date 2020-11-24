@@ -1,3 +1,4 @@
+
 #footer{
   background-color: rgb(226, 223, 223);
   height: 420px;
@@ -5,29 +6,591 @@
   display: flex;
   justify-content: space-evenly;
 }
-#column1,#column2,#column3,#column4{
+/* #column1,#column2,#column3,#column4{ */
+
+/* reuseable style code for header */
+.font {
+  font-family: "Merriweather Sans", sans-serif;
+}
+.lightFont {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+}
+.font-light {
+  font-family: "open-sans";
+}
+.textGrey {
+  color: grey;
+}
+.align {
+  text-align: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+.dash {
+  border: 1px dashed red;
+}
+.zeroPadMar {
+  padding: 0px;
+  margin: 0px;
+}
+
+.redBackground {
+  background-color: red;
+  color: white;
+}
+.blueBackgroundColor {
+  background-color: #a0ece7;
+  color: white;
+}
+.greyBorder {
+  border: 1px solid grey;
+}
+.borderRadius {
+  border-radius: 40px;
+}
+.btnBackgroundColor {
+  background-color: #3367d6;
+  color: white;
+}
+
+/* style for header sectio */
+#header {
+  border: 1px solid red;
+  width: 1597px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.logo {
+  float: left;
+  clear: left;
+}
+.logoName {
+  margin-top: 25px;
+  margin-left: 200px;
+}
+
+/* style code for navbar */
+.navbar {
+  margin-top: 10px;
+  margin-right: 60px;
+  float: right;
+}
+
+.navbar > div {
+  width: 150px;
+  height: 60px;
+  float: left;
+  margin: 10px;
+}
+
+.notice {
+  width: 1580px;
+  height: 60px;
+  margin: 0px 0px;
+  margin-top: 100px;
+  float: left;
+  clear: left;
+}
+.notice div:nth-child(1),
+.notice div:nth-child(2),
+.notice div:nth-child(3) {
+  width: 390px;
+  height: 30px;
+  float: left;
+  margin-left: 120px;
+}
+
+/* style code for icons */
+.icon-check {
+  font-size: 30px !important;
+  float: left;
+  margin: 20px;
+  color: red;
+}
+
+/* body intro section style code */
+.bodyIntro {
+  width: 1580px;
+  height: 400px;
+  float: left;
+  margin-top: 40px;
+}
+
+.intro-head {
+  font-size: 48px;
+  font-weight: 700;
+}
+.intro-head-div {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.intro-tag {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 24px;
+}
+
+.signup-btn-cont {
+  border: 1px solid red;
+  width: 800px;
+  height: 150px;
+  margin: 0px auto;
+}
+.btn-1 {
+  border: 1px solid red;
+  width: 300px;
+  height: 60px;
+  float: left;
+  margin: 20px 40px;
+  border-radius: 50px;
+}
+.btn-2 {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 60px;
+  margin: 20px 40px;
+
+  float: left;
+  border-radius: 50px;
+}
+
+.icon-login {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 30px;
+  margin-top: 15px;
+  float: left;
+  color: red;
+  font-size: 30px !important;
+}
+.sign-p {
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.caption {
+  margin: 10px 300px;
+}
+
+/* body section one style code  */
+.body-section-one {
+  width: 1580px;
+  height: 700px;
+  float: left;
+}
+.img-showcase {
+  width: 620px;
+  height: 600px;
+  float: left;
+  margin: 20px 0px;
+
+  margin-left: 150px;
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: contain;
+}
+
+.work-showcase {
+  width: 80px;
+  height: 600px;
+  float: right;
+  clear: right;
+  margin-right: 100px;
+}
+
+.workshowcase-r-box {
+  width: 550px;
+  height: 600px;
+  clear: right;
+  float: right;
+  margin: 20px 30px;
+  margin-right: 120px;
+}
+/* this is code for behaviour and feedback */
+.showcase-tag {
+  margin: 10px 30px;
+}
+
+.behave-cont-1 {
+  width: 200px;
+  float: left;
+  margin: 15px 30px;
+}
+.behave-cont-2 {
+  width: 200px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
+}
+.showcase-feedback {
+  clear: left;
+}
+
+.show-caption {
+  margin: 15px 30px;
+
+  float: left;
+  clear: left;
+}
+.icon-show {
+  font-size: 30px !important;
+  float: left;
+  margin: 10px;
+  color: red;
+}
+.behave-cont-3 {
+  width: 400px;
+  margin: 15px 30px;
+  float: left;
+  clear: left;
+}
+
+/* trust section code  */
+.trustSection {
+  width: 900px;
+  height: 100px;
+  margin: 20px auto;
+  margin-left: 350px;
+  text-align: center;
+  float: left;
+}
+.span {
+  width: 100px;
+  height: 40px;
+  float: left;
+  margin: 0px 24px;
+  text-align: center;
+}
+.a {
+  height: 50px;
+}
+
+/* ============================================================================================*/
+
+                    GDPR SECTION
+/*============================================================================================== */
+.gdpr-section {
+  border: 1px solid red;
+  width: 900px;
+  height: 200px;
+  float: left;
+  margin-top: 150px;
+  margin-left: 350px;
+  background-color: #f9f9f9;
+}
+.gdpr-left {
+  width: 250px;
+  height: 150px;
+  margin: 20px;
+  float: left;
+}
+.gdpr-right {
+  float: left;
+  margin: 20px;
+  margin-left: 100px;
+}
+.gdpr-img-1 {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-left: 40px;
+}
+.gdpr-img-2 {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-left: 40px;
+}
+
+/* =======================================================================================================
+                code for body section boxes part 
+ ============================================================*/
+.market-main-div {
+  width: 1140px;
+  height: 450px;
+  margin: 10px auto;
+  margin-left: 230px;
+
+  float: left;
+  /* padding: 30px; */
+}
+.market {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.product {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.uxdesign {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.build {
+  width: 240px;
+  height: 400px;
+  float: left;
+  margin: 20px 20px;
+}
+.market-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg");
+}
+.product-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg");
+}
+.uxdesign-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg");
+}
+.descp > h2 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.descp {
+  margin: 10px;
+}
+.build-desc {
+  margin-top: 120px;
+  text-align: left;
+}
+.build-span {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+/* ============================================================================
+                  style for technology imageshowcase section
+ ========================================== */
+.img-main-div {
+  width: 1200px;
+  margin: 10px auto;
+  margin-left: 200px;
+  height: 550px;
+  float: left;
+}
+.img-show {
+  width: 900;
+  height: 420px;
+  margin: 40px 50px;
+  background-image: url("https://static-cms.hotjar.com/documents/brand-one-script_Twj5bMZ.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.h2-tag {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
+}
+
+/* Style sheet for about page start */
+
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 20px;
+}
+#AboutMain {
+  width: 100%;
+  height: 100%;
+}
+#AboutMain > div {
+  width: 100%;
+  height: 350px;
+  margin-top: 5%;
+}
+#AboutMain > div:nth-child(1) {
+  height: 550px;
+  background-color: #f4f4f4;
+}
+.TopBox > div:nth-child(1),
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(1),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(1),
+.BottomBox > div:nth-child(2) {
+  width: 55%;
+  height: 100%;
+  float: left;
+}
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(2) {
+  width: 40%;
+  height: 90%;
+  margin: 2%;
+}
+.TopBox > div:nth-child(2) {
+  margin-top: 5%;
+  height: 65%;
+}
+.Feedback {
+  width: 50px;
+  height: 130px;
+  position: fixed;
+  top: 200px;
+  left: 1310px;
+  background: #ff5151;
+  border-radius: 5px;
+}
+.Feedback > p {
+  padding-left: 4px;
+  padding-top: 18px;
+  line-height: 1px;
+  font-size: 18px;
+  color: white;
+  writing-mode: vertical-rl;
+}
+.Feedbackimg {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 25px;
+  height: 30px;
+}
+.imgbox {
+  width: 100%;
+  height: 100%;
+}
+.arrowimg {
+  width: 35px;
+  height: 25px;
+  float: left;
+}
+.CustomerBox > div:nth-child(1) {
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+.CustomerBox > div:nth-child(2) {
+  width: 100%;
+  height: 200px;
+}
+.CustomerBox > div:nth-child(3) {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+.CustomerLogo > div:nth-child(1),
+.CustomerLogo > div:nth-child(2),
+.CustomerLogo > div:nth-child(3),
+.CustomerLogo > div:nth-child(4),
+.CustomerLogo > div:nth-child(5),
+.CustomerLogo > div:nth-child(6) {
+  width: 10%;
+  height: 28%;
+  float: left;
+  margin: 3%;
+}
+.CustomerLogo > div:nth-child(1) {
+  margin-left: 5%;
+}
+/* Style sheet for about page end */
+/* style for footer */
+
+#footer {
+  background-color: #f9f9f9;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#column1,
+#column2,
+#column3,
+#column4 {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 20px;
 }
-#column1>a, #column2>a, #column3>a, #column4>a{
+
+
+
+#column1 > a,
+#column2 > a,
+#column3 > a,
+#column4 > a {
   margin-top: 5px;
   margin-bottom: 5px;
   text-decoration: none;
-   color: black; 
+  color: black;
+
 }
 .img {
   height: 30px;
   width: 30px;
   margin-top: 40px;
 }
+
 .clear{
   clear: both;
 }
 #column2>div{
 margin-top: 65px;
 }
-#fb{
+#fb > .clear {
+  clear: both;
+}
+#column2 > div {
+  margin-top: 65px;
+}
+#fb {
   margin-top: 180px;
 }
