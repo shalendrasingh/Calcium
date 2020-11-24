@@ -295,7 +295,7 @@
 
 /* Style sheet for about page start */
 
-h {
+h1{
   font-size: 50px;
 }
 p {
@@ -339,19 +339,28 @@ p {
   margin-top: 5%;
   height: 65%;
 }
-.Feedback {
+.Feedback{
   width: 50px;
-  height: 200px;
+  height: 130px;
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 1310px;
-  background: red;
+  background: #ff5151;
+  border-radius: 5px;
 }
 .Feedback > p {
-  padding-left: 15px;
+  padding-left: 4px;
+  padding-top: 18px;
   line-height: 1px;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
+  writing-mode: vertical-rl;
+}
+.Feedbackimg{
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 25px;
+  height: 30px;
 }
 .imgbox {
   width: 100%;
@@ -398,7 +407,7 @@ p {
 /* style for footer */
 
 #footer {
-  background-color: rgb(226, 223, 223);
+  background-color:#F9F9F9;
   height: 420px;
   width: 100%;
   display: flex;
