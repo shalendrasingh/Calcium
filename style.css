@@ -1,8 +1,7 @@
-
-#footer{
+#footer {
   background-color: rgb(226, 223, 223);
   height: 420px;
-  width: 100%;   
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -271,10 +270,9 @@
 
 /* ============================================================================================*/
 
-                    GDPR SECTION
+/* GDPR SECTION */
 /*============================================================================================== */
 .gdpr-section {
-  border: 1px solid red;
   width: 900px;
   height: 200px;
   float: left;
@@ -286,12 +284,14 @@
   width: 250px;
   height: 150px;
   margin: 20px;
+  margin-left: 50px !important;
+  margin-top: 40px !important;
   float: left;
 }
 .gdpr-right {
   float: left;
-  margin: 20px;
-  margin-left: 100px;
+  margin-left: 200px !important;
+  margin-top: 40px !important;
 }
 .gdpr-img-1 {
   width: 120px;
@@ -312,11 +312,9 @@
 .market-main-div {
   width: 1140px;
   height: 450px;
-  margin: 10px auto;
+  margin: 30px auto;
   margin-left: 230px;
-
   float: left;
-  /* padding: 30px; */
 }
 .market {
   width: 200px;
@@ -374,7 +372,6 @@
   text-align: left;
 }
 .build-span {
-  border: 1px solid red;
   margin: 10px;
 }
 
@@ -561,8 +558,6 @@ p {
   padding-bottom: 20px;
 }
 
-
-
 #column1 > a,
 #column2 > a,
 #column3 > a,
@@ -571,7 +566,6 @@ p {
   margin-bottom: 5px;
   text-decoration: none;
   color: black;
-
 }
 .img {
   height: 30px;
@@ -579,11 +573,11 @@ p {
   margin-top: 40px;
 }
 
-.clear{
+.clear {
   clear: both;
 }
-#column2>div{
-margin-top: 65px;
+#column2 > div {
+  margin-top: 65px;
 }
 #fb > .clear {
   clear: both;
