@@ -1,6 +1,19 @@
+#footer {
+  background-color: rgb(226, 223, 223);
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* #column1,#column2,#column3,#column4{ */
+
 /* reuseable style code for header */
 .font {
   font-family: "Merriweather Sans", sans-serif;
+}
+.lightFont {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
 }
 .font-light {
   font-family: "open-sans";
@@ -52,7 +65,7 @@ p {
 #header {
   border: 1px solid red;
   width: 1597px;
-  height: 150px;
+  height: 100px;
   position: fixed;
   top: 0;
   background-color: white;
@@ -84,7 +97,7 @@ p {
   width: 1580px;
   height: 60px;
   margin: 0px 0px;
-  margin-top: 140px;
+  margin-top: 100px;
   float: left;
   clear: left;
 }
@@ -201,7 +214,6 @@ p {
   float: right;
   margin: 20px 30px;
   margin-right: 120px;
-  border: 1px solid red;
 }
 /* this is code for behaviour and feedback */
 .showcase-tag {
@@ -262,17 +274,15 @@ p {
   height: 50px;
 }
 
-/* ============================================================================================
+/* ============================================================================================*/
 
-                    GDPR SECTION
-
-============================================================================================== */
+/* GDPR SECTION */
+/*============================================================================================== */
 .gdpr-section {
-  border: 1px solid red;
   width: 900px;
   height: 200px;
   float: left;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: 350px;
   background-color: #f9f9f9;
 }
@@ -280,12 +290,14 @@ p {
   width: 250px;
   height: 150px;
   margin: 20px;
+  margin-left: 50px !important;
+  margin-top: 40px !important;
   float: left;
 }
 .gdpr-right {
   float: left;
-  margin: 20px;
-  margin-left: 100px;
+  margin-left: 200px !important;
+  margin-top: 40px !important;
 }
 .gdpr-img-1 {
   width: 120px;
@@ -306,11 +318,9 @@ p {
 .market-main-div {
   width: 1140px;
   height: 450px;
-  margin: 10px auto;
+  margin: 30px auto;
   margin-left: 230px;
-
   float: left;
-  /* padding: 30px; */
 }
 .market {
   width: 200px;
@@ -368,7 +378,6 @@ p {
   text-align: left;
 }
 .build-span {
-  border: 1px solid red;
   margin: 10px;
 }
 
@@ -410,6 +419,9 @@ p {
 
 .MiddleBox{
   grid-area: MB;
+}
+h1 {
+  font-size: 50px;
 }
 .BottomBox{
   grid-area: BB;
@@ -600,6 +612,7 @@ p {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
 #column1 > a,
 #column2 > a,
 #column3 > a,
@@ -614,7 +627,14 @@ p {
   width: 30px;
   margin-top: 40px;
 }
+
 .clear {
+  clear: both;
+}
+#column2 > div {
+  margin-top: 65px;
+}
+#fb > .clear {
   clear: both;
 }
 #column2 > div {
@@ -623,3 +643,39 @@ p {
 #fb {
   margin-top: 180px;
 }
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
+}
+
