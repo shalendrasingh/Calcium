@@ -728,3 +728,150 @@ p {
 #fb {
   margin-top: 180px;
 }
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
+}
+/* =============================================================================
+style code for Login section
+====================================================== */
+#Signinmain{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+#Signinmain>div:nth-child(1){
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  top: 0.90px;
+}
+#Signinmain>div:nth-child(2), #Signinmain>div:nth-child(3){
+  height: 100%;
+  width: 45%;
+  border: 1px solid yellow;
+  float: left;
+}
+#Signinmain>div:nth-child(2){
+  position: fixed;
+  margin-top: 53px;
+  background-color: white;
+}
+#Signinmain>div:nth-child(3){
+  width: 54%;
+  float: left;
+  margin-left: 610px;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1), #Signinmain>div:nth-child(2)>div:nth-child(2), #Signinmain>div:nth-child(2)>div:nth-child(4){
+  width: 99%;
+  height: 150px;
+  border: 1px solid green;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(3){
+  width: 99%;
+  height: 180px;
+  border: 1px solid green;
+}
+#Signinmain>div:nth-child(3){
+  width: 54%;
+  height: 640px;
+  background-color: #E7E8EA;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1)>h1{
+  font-size: 40px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  margin-left: 50px;
+  line-height: 20px;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1)>p{
+  font-size: 18px;
+  color: grey;
+  margin-right: 270px;
+}
+.loginbtn{
+  width: 80%;
+  height: 70px;
+  background-color: blue;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-left: 35px;
+  border: none;
+  border-radius: 5px;
+}
+.Gimg{
+  position: absolute;
+  width: 80px;  
+  height: 60px;
+  top: 158px;
+  left: 40px;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+.btnimg{
+  width: 80px;
+  height: 60px;
+}
+.leftbox{
+  width: 90%;
+  height: 80%;
+  /* border: 1px solid red; */
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.Jarimg{
+  width: 100%;
+  height: 100%;
+}
+.leftboxtxt>h2,p{
+  text-align: center;
+}
+.leftboxtxt>p{
+  font-size: 15px;
+  line-height: 1px;
+  color: grey;
+}
+.Learnmorebtn{
+  width: 100px;
+  height: 50px;
+  margin-left: 42%;
+  background-color: #E7E8EA;
+  border: 1px solid grey;
+}
+.Learnmorebtn:hover{
+  background-color: grey;
+}
