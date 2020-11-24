@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style type="text/css">
+        * {
+            font-family: "open-sans";
+            font-size: 18px;
+        }
+
+        .center_text {
+            text-align: center;
+        }
+
+        #plan {
+            border: 1px solid red;
+            height: 300px;
+            width: 100%;
+            background-image: linear-gradient(red,yellow);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+         
+
+        .button_p {
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border: white;
+        }
+
+        #data {
+            height: 600px;
+            width: 50%;
+            border: 1px solid rgb(211, 206, 206);
+            margin: 10px auto;
+            background-color: white;
+        }
+
+        #h1_p{
+            padding-top: 450px;
+            font-size: 18px;
+            font-family: "Merriweather Sans", sans-serif;
+            margin-top: 20px;
+        }
+
+        /* styles user for creating accordian button and text */
+        .accordian {
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            /* for creating hover effect on button */
+            transition: 0.4s;
+        }
+
+        .panel {
+            padding: 0px 18px;
+            /* for hidding all the panel data */
+            display: none;
+            overflow: hidden;
+        }
+
+        .active,
+        .accordian:hover {
+            background-color: rgb(235, 231, 231);
+
+        }
+
+        .accordian::before {
+            content: '\02795';
+            height: 1px;width: 1px;
+        }
+
+        .active::before {
+            content: '\02796';
+            height: 1px;width: 1px;
+        }
+
+        .faq{
+            width: 50%;
+            margin: 0px auto;
+        }
+        .organizations {
+            width: 60%;
+            margin: 0px auto;
+        }
+
+        .organizations {
+            margin-top: 50px;
+        }
+
+        .img_p {
+            height: 50px;
+            width: 120px;
+            margin: 20px;
+        }
+
+        strong,.dark {
+            font-size: 30px;
+            font-family: "Merriweather Sans", sans-serif;
+        }
+        #personal{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 15px;
+            color: black;
+            /* display: none; */
+        }
+        .back_color{
+            background-color: rgb(243, 237, 237);
+            margin-top: 10px;
+            height: 60%;
+        }
+        .icon{
+            height: 20px;
+            width: 20px;
+            border: 1px solid red;
+            background-color: green;
+            border-radius: 10px;
+            margin: 5px;
+            /* float: left; */
+        }
+        .back_color>div{
+            margin: 10px; 
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        .float_left{
+            float: left;
+        }
+        #slider{
+            width: 80%;
+        }
+        #business{
+            color: black;
+            display: none;
+        }
+        table{
+            width: 100%;
+            margin: 10px auto;
+           
+        }
+        .data_collection>thead{
+            color: gray;
+        }
+        .tryit{
+            height: 30px;
+            border-radius: 5px;
+            margin: 10px 0px;
+        }
+        .check_box{
+         border: 0px;
+        }
+        .back_color_gray{
+            background-color: rgb(241, 235, 235);
+       
+        
+        }
+        #agency{
+            color: black;
+            display: none;
+        }
+        .agency_img{
+            height: 180px;
+            width: 80%;
+            margin: 10px auto;
+        }
+        .btn_learn{
+            width: 180px;
+            margin: 0px 10px;
+            border-radius: 5px;
+            height: 30px;
+            border: 1px solid gray;
+        }
+        #margin_20{
+           margin-top: 20px;
+        }
+        #below_data,#below_data1{
+            margin-top: 30px;
+        }
+        #footer{
+        background-color: rgb(226, 223, 223);
+        height: 460px;
+        width: 100%;   
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #column1,#column2,#column3,#column4{
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    #column1>a, #column2>a, #column3>a, #column4>a{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
+         color: black; 
+    }
+    .img {
+        height: 30px;
+        width: 30px;
+        margin-top: 40px;
+    }
+    #column2>div{
+     margin-top: 65px;
+    }
+    #fb{
+        margin-top: 180px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="plan">
+        <strong >Find the right plan for your site:</strong>
+        <div>
+            <button class="button_p" id="personal_btn">Personal</button>
+            <button class="button_p" id="business_btn">Business</button>
+            <button class="button_p" id="agency_btn">Agency</button>
+        </div>
+        <h3>For Agencies and Consultants working with client sites.</h3>
+        <div id="data">
+            <div id="agency">
+                <strong>Agency</strong>
+                <div>Upgrade/Download anytime.</div>
+                <img class="agency_img" src="https://static-cms.hotjar.com/original_images/pricing-agencies.png">
+                <h6 class="center_text">Get an extended 30-day trial:</h6>
+                <button class="tryit">Try It</button><button class="btn_learn">LEARN MORE</button>
+                <div><a class="center_text" href="#">Contact Us</a></div>
+                <table class="back_color_gray">
+                    <thead>
+                        <tr>
+                           <h4 id="margin_20"> Included with your Hotjar Agency plan:</h4>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span><img class="icon" src="#"/></span>Unlimited client sites in one</br> central account</td>
+                            <td><span><img class="icon" src="#"/></span>  Invite client users to see and </br>manage their data  </td>
+                        </tr>
+                        <tr>
+                            <td><span><img class="icon" src="#"/></span>Discount volume pricing </td>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="personal">
+                <div id="basic">
+                    <strong>BASIC</strong>
+                    <div>To get you started.</div>
+                    <h2>FREE FOREVER</h2>
+                    <button id="start">START NOW</button>
+                    <div>Collect data from:</br> <strong>2,000 Pageviews/day</strong></div>
+                     <div class="back_color" id="below_data">
+                         
+                      <div><span><img class="icon" src="#"/></span> Limited reports</div>
+                      
+                      <div class="float_left"><span><img class="icon" src="#"/></span> Unlimited team members</div>
+                      <div><span><img class="icon" src="#"/></span> 100 recordings per snapshot</div>
+                      <div><span><img class="icon" src="#"/></span> Store up to 300 recordings</div>
+                      <div><span><img class="icon" src="#"/></span> Data storage for 365 days</div>
+                     </div>
+                </div>
+                <div id="plus">
+                    <strong>PLUS</strong>
+                    <div>For low-traffic sites & early stage-startups.</div>
+                    <h2>&#36;/Month</h2>
+                    <button id="try">TRY IT</button>
+                    <div>Collect data from:</br> <strong>10,000 Pageviews/day</strong></div>
+                    <div class="back_color" id="below_data1">
+                        <div><span><img class="icon" src="#"/></span> Limited reports</div>
+                        <!-- <div class="clear"></div> -->
+                        <div><span><img class="icon" src="#"/></span> Unlimited team members</div>
+                        <div><span><img class="icon" src="#"/></span> 100 recordings per snapshot</div>
+                        <div><span><img class="icon" src="#"/></span> Store up to 300 recordings</div>
+                        <div><span><img class="icon" src="#"/></span> Data storage for 365 days</div>
+                       </div>
+                </div> 
+            </div>
+            <div id="business">
+                <h6>I want to collect data from <span id="slider-data">5000</span> pageviews per day.</h6>
+                <input type="range" id="slider" min="1000" max="2000000"/>
+                <table class="data_collection">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>DATA COLLECTION</td>
+                            <td>RECORDINGS</td>
+                            <td>PRICE</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="check_box1"></td>
+                            <td>20,000 Previews/day</td>
+                            <td>500/day</td>
+                            <td>&#36;99/mo</td>
+                            <td><button class="tryit button_p">TRY IT</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="check_box2"></td>
+                            <td>50,000 Previews/day</td>
+                            <td>1,500/day</td>
+                            <td>&#36;189/mo</td>
+                            <td><button class="tryit button_p">TRY IT</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="check_box3"></td>
+                            <td>120,000 Previews/day</td>
+                            <td>2,500/day</td>
+                            <td>&#36;289/mo</td>
+                            <td><button class="tryit button_p">TRY IT</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="check_box4"></td>
+                            <td>200,000 Previews/day</td>
+                            <td>4,000/day</td>
+                            <td>&#36;389/mo</td>
+                            <td><button class="tryit button_p">TRY IT</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="back_color_gray">
+                    <thead>
+                        <tr>
+                           <h6> All Business plans include:</h6>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days</td>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                        </tr>
+                        <tr>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                        </tr>
+                        <tr>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <h1 class="center_text" id="h1_p">Frequently asked questions:</h1>
+    <div class="faq">
+        <button class="accordian button_p">How do I install Hotjar?</button>
+        <div class="panel">
+            <p>A single tracking code allows you to collect data from your visitors and send it back to Hotjar.
+                Installation involves copy and pasting your unique Tracking Code within the site you would like to
+                track. We’ve created guides to help you install the Tracking Code on various platforms that you can find
+                here.</p>
+        </div>
+        <button class="accordian button_p">What's the commitment?</button>
+        <div class="panel">
+            <p>With Hotjar there is no contract to sign and you can upgrade or downgrade between different plans any
+                time – directly from your account. If you choose to pay on a monthly basis, your subscription can be
+                cancelled at any time by simply downgrading to the free Basic plan.</p>
+        </div>
+        <button class="accordian button_p">Are the prices per site?</button>
+        <div class="panel">
+            <p>Yes. The prices for each plan are charged per site you set up in Hotjar. You are provided a tracking code
+                per site which you can install on multiple subdomains. If your organization owns multiple sites, or if
+                you work with clients, you select a plan for each site you set up. You can downgrade and upgrade your
+                site plans at any time.</p>
+        </div>
+        <button class="accordian button_p">Should I be collecting data from all my pageviews?</button>
+        <div class="panel">
+            <p>The more pageviews you collect data from, the faster you will collect recordings and the faster you will
+                generate heatmap and form reports. Choosing a pageview limit that includes all your traffic will also
+                ensure funnels are not based on a sample of your traffic.</p>
+        </div>
+        <button class="accordian button_p">Can I handle multiple sites with one account?</button>
+        <div class="panel">
+            <p>Hotjar works differently from other tools that capture data based on data points. Instead of collecting
+                the first 20,000 data points and then stop collecting data, Hotjar automatically distributes data
+                collection throughout the day (what we call 'sampling'). The closer your data points to your site
+                traffic, the bigger the % of data you will collect.</p>
+        </div>
+        <button class="accordian button_p">Do you offer yearly price plans?</button>
+        <div class="panel">
+            <p>Yes – Hotjar gives you the option to pay for your plans annually. When annual payment is set up in-app
+                with a credit card or Paypal, a 20% discount prior to VAT is added to your bill. Kindly view our help
+                doc for further details.</p>
+        </div>
+        <button class="accordian button_p">What payment methods do you support?</button>
+        <div class="panel">
+            <p>For monthly payments, we support all major credit cards (Visa, Mastercard, AMEX, Maestro, and Discover)
+                and Paypal. For yearly payments on the Business plan, we accept payments via wire transfer, all major
+                credit cards, and Paypal.</p>
+        </div>
+        <button class="accordian button_p">What are reports?</button>
+        <div class="panel">
+            <p>Automatically collecting data from all pages on your site can be very expensive and data intensive.
+                Hotjar makes it more affordable by taking an ‘on demand’ report approach. You can generate an unlimited
+                amount of reports on an unlimited number of pages whenever you need them. This makes Hotjar more
+                affordable and ideal for fast moving and lean organizations since it allows for rapid changes.</p>
+        </div>
+    </div>
+    <div class="organizations">
+        <table>
+            <thead>
+                <tr>
+
+                    <strong>Trusted by over 350,000 organizations across 184 countries.</strong>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/intuit.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/columbia.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/hubspot2x.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/ustream.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/avg.png" /></td>
+                </tr>
+                <tr>
+                    <td><img class="img_p" src="https://static-cms.hotjar.com/original_images/netsuite.png" /></td>
+                    <td><img class="img_p"  src="https://static-cms.hotjar.com/original_images/panasonic.png" /></td>
+                    <td><img class="img_p"  src="https://static-cms.hotjar.com/original_images/logitech.png" /></td>
+                    <td><img class="img_p" src="https://static-cms.hotjar.com/original_images/fiat.png" /></td>
+                    <td><img class="img_p" src="https://static-cms.hotjar.com/original_images/invision.png" /></td>
+                </tr>
+                <tr>
+                    <td><img class="img_p"  src="https://static-cms.hotjar.com/original_images/tmobile.png" /></td>
+                    <td><img class="img_p"  src="https://static-cms.hotjar.com/original_images/chrysler.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/bwin.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/decolar.png" /></td>
+                    <td><img  class="img_p" src="https://static-cms.hotjar.com/original_images/jet.png" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img class="img_p" src="https://static-cms.hotjar.com/original_images/solarwinds.png" /></td>
+                    <td><img class="img_p" src="https://static-cms.hotjar.com/original_images/nintendo.png" /></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="footer">
+        <div id="column1">
+            <strong>HOTJAR</strong>
+            <a href="#">Product Tour</a>
+            <a href="#">Product Tour</a>
+            <a href="#">Pricing</a>
+            <a href="#">Customer Stories</a>
+            <a href="#">Product Update</a>
+            <a href="#">What is Hotjar?</a>
+            <a href="#">Status</a>
+            <a href="#">Site Performance</a>
+            <a href="#">Your Privacy & Hotjar</a>
+            <img class="img" src="https://www.flaticon.com/svg/static/icons/svg/1409/1409922.svg"> 
+          </div>
+        <div id="column2">
+            <strong>RESOURCES</strong>
+            <a href="#">Blog</a>
+            <a href="#">Guides</a>
+            <a href="#">Support Documentation</a>
+            <a href="#">Heatmap handbook</a>
+            <a href="#">CRO action plan</a>
+            <a href="#">CX resources</a>
+            <a href="#">Usability teting hub</a>
+            <a href="#">Website feddback 101</a>
+            <div>Copyright &#169 2014-2020 Hotjar Ltd.</br> All rights reserved</div>
+          </div>
+        <div id="column3">
+            <strong>COMPLIANCE</strong>
+            <a href="#">Complaiance legal &</br> security</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Acceptable use policy</a>
+            <a href="#">Cookie info</a>
+            <a href="#">Cookie settings</a>
+            <a href="#">Do not track</a>
+          </div>
+        <div id="column4">
+            <strong>COMPANY</strong>
+            <a href="#">About us </a>
+            <a href="#">Careers</a>
+            <a href="#">Founding members</a>
+            <a href="#">Get help</a>
+            <span>
+            <img class="img" id="fb" style="display: inline;" src="https://www.flaticon.com/svg/static/icons/svg/145/145802.svg"/>
+            <img class="img" style="display: inline;" src="https://www.flaticon.com/svg/static/icons/svg/145/145812.svg"/>
+          </span>
+          </div>
+          
+      </div>
+      
+ 
+
+    <script type="text/javascript">
+    var personal_btn=document.getElementById("personal_btn");
+    var business_btn=document.getElementById("business_btn");
+    var agency_btn=document.getElementById("agency_btn");
+    var business_data=document.getElementById('business');
+    var perosnal_data=document.getElementById('personal');
+    var agency_data=document.getElementById('agency');
+    var data_plan=document.getElementById('plan');
+        var acc = document.getElementsByClassName("accordian");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                // toggle bet adding and removing 
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            })
+        }
+
+        var slider=document.getElementById("slider");
+        var output=document.getElementById("slider-data");
+        output.innerHTML=slider.value;
+         var check_box1=document.getElementById("check_box1");
+         var slider_value=Number(output.innerHTML);
+       console.log(slider_value)
+        if(slider_value<20000){
+           console.log(check_box1);
+          check_box1.checked=true;
+        }
+
+        // to show the selected value on slider to output
+        slider.oninput=function(){
+            output.innerHTML=this.value;
+        }
+
+        var try_button=document.getElementsByClassName('tryit');
+        function change_red(event){
+            var item=event.target;
+            item.style.backgroundColor="red";
+            item.style.color="white";
+        }
+        for(var i=0;i<try_button.length;i++){
+            try_button[i].addEventListener('click',change_red);
+        }
+        function personal(event){
+            
+            perosnal_data.style.display='flex';
+            business_data.style.display='none';
+            agency_data.style.display='none';
+            data_plan.style.background = `linear-gradient(blue,pink)`;
+            event.target.style.background=`linear-gradient(blue,pink)`;
+            
+        }
+        function business(event){
+            // var business_data=document.getElementById('business');
+            business_data.style.display='block';
+            agency_data.style.display='none';
+            perosnal_data.style.display='none';
+            data_plan.style.background = `linear-gradient(pink,yellow)`;
+            event.target.style.background=`linear-gradient(pink,yellow)`;
+        }
+        function agency(event){
+           
+            agency_data.style.display='block';
+            perosnal_data.style.display='none';
+            business_data.style.display='none';
+            data_plan.style.background = `linear-gradient(skyblue,green)`;
+            event.target.style.background=`linear-gradient(skyblue,green)`;
+        }
+        personal_btn.addEventListener('click',personal);
+        business_btn.addEventListener('click',business);
+        agency_btn.addEventListener('click',agency);
+    </script>
+</body>
+
+</html>
