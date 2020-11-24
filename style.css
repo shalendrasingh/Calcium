@@ -23,16 +23,13 @@
   padding: 0px;
   margin: 0px;
 }
-.trueBackgroundColor {
-  background-color: #a0ece7;
-}
 
 .redBackground {
   background-color: red;
   color: white;
 }
 .blueBackgroundColor {
-  background-color: #5284ed;
+  background-color: #a0ece7;
   color: white;
 }
 .greyBorder {
@@ -47,6 +44,9 @@
   border: 1px solid red;
   width: 1597px;
   height: 150px;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 .logo {
   float: left;
@@ -66,39 +66,42 @@
 
 .navbar > div {
   width: 150px;
-  height: 50px;
+  height: 60px;
   float: left;
   margin: 10px;
 }
 
 .notice {
-  width: 1598px;
-  height: 50px;
-  margin: 20px 0px;
+  width: 1580px;
+  height: 60px;
+  margin: 0px 0px;
+  margin-top: 140px;
   float: left;
+  clear: left;
 }
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 370px;
+  width: 390px;
   height: 30px;
   float: left;
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 /* style code for icons */
 .icon-check {
   font-size: 30px !important;
   float: left;
-  margin: 10px;
+  margin: 20px;
   color: red;
 }
 
 /* body intro section style code */
 .bodyIntro {
-  width: 1597px;
+  width: 1580px;
   height: 400px;
   float: left;
+  margin-top: 70px;
 }
 
 .intro-head {
@@ -117,14 +120,14 @@
 
 .signup-btn-box {
   width: 800px;
-  height: 100px;
+  height: 0px;
   /* float: left; */
   margin: 20px auto;
 }
 .signup-btn-box div:nth-child(1),
 .signup-btn-box div:nth-child(2) {
   width: 300px;
-  height: 50px;
+  height: 60px;
   font-weight: 600;
   float: left;
   margin-top: 20px;
@@ -139,38 +142,49 @@
   font-weight: 500;
   margin: 15px 330px;
 }
+/* ==================================== */
 
 /* body section one style code  */
 .body-section-one {
-  width: 1597px;
+  width: 1580px;
   height: 700px;
   float: left;
+  /* clear: left; */
   /* margin: 10px; */
 }
 .img-showcase {
-  width: 720px;
+  width: 620px;
   height: 600px;
   float: left;
+  /* clear: left; */
   /* margin: 10px; */
-  margin-left: 180px;
+  margin: 20px 0px;
+
+  margin-left: 150px;
   background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: contain;
 }
 
 .work-showcase {
+  width: 80px;
+  height: 600px;
+  float: right;
+  clear: right;
+  margin-right: 100px;
+}
+
+/* .showcase-img-1 {
+  background-size: con;
+} */
+
+.workshowcase-r-box {
   width: 550px;
   height: 600px;
   clear: right;
   float: right;
-  margin-right: 120px;
-}
-
-.showcase-img-1 {
-  background-size: con;
-}
-
-.workshowcase-r-box {
   margin: 20px 30px;
+  margin-right: 120px;
+  border: 1px solid red;
 }
 /* this is code for behaviour and feedback */
 .showcase-tag {
@@ -212,17 +226,16 @@
 }
 
 /* trust section code  */
-.border {
-  border: 1px solid red;
+.trustSection {
   width: 900px;
-  height: 200px;
-  margin: 10px auto;
+  height: 100px;
+  margin: 20px auto;
+  margin-left: 350px;
   text-align: center;
-  margin-bottom: 0px;
-  padding: 0px;
+  float: left;
 }
 .span {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100px;
   height: 40px;
   float: left;
@@ -234,6 +247,48 @@
   /* margin-top: 50px; */
   /* border: 1px solid red; */
   height: 50px;
+}
+
+/* ============================================================================================
+
+                    GDPR SECTION
+
+============================================================================================== */
+.gdpr-section {
+  border: 1px solid red;
+  width: 900px;
+  height: 200px;
+  float: left;
+  margin-left: 350px;
+  background-color: #f9f9f9;
+}
+.gdpr-left {
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 150px;
+  margin: 20px;
+  /* margin-left: 120px; */
+  float: left;
+}
+.gdpr-right {
+  float: left;
+  margin: 20px;
+  margin-left: 100px;
+  /* margin: auto; */
+}
+.gdpr-img-1 {
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid red; */
+  float: left;
+  margin-left: 40px;
+}
+.gdpr-img-2 {
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid red; */
+  float: left;
+  margin-left: 40px;
 }
 
 /* Style sheet for about page start */
