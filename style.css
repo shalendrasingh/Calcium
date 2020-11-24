@@ -2,6 +2,10 @@
 .font {
   font-family: "Merriweather Sans", sans-serif;
 }
+.lightFont {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+}
 .font-light {
   font-family: "open-sans";
 }
@@ -389,6 +393,42 @@
   margin: 0px;
   text-align: center;
   margin-top: 20px;
+}
+
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
 }
 
 /* Style sheet for about page start */
