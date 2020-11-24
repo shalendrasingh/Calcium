@@ -1,3 +1,13 @@
+
+#footer{
+  background-color: rgb(226, 223, 223);
+  height: 420px;
+  width: 100%;   
+  display: flex;
+  justify-content: space-evenly;
+}
+/* #column1,#column2,#column3,#column4{ */
+
 /* reuseable style code for header */
 .font {
   font-family: "Merriweather Sans", sans-serif;
@@ -259,11 +269,10 @@
   height: 50px;
 }
 
-/* ============================================================================================
+/* ============================================================================================*/
 
                     GDPR SECTION
-
-============================================================================================== */
+/*============================================================================================== */
 .gdpr-section {
   border: 1px solid red;
   width: 900px;
@@ -551,6 +560,9 @@ p {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
+
+
 #column1 > a,
 #column2 > a,
 #column3 > a,
@@ -559,13 +571,21 @@ p {
   margin-bottom: 5px;
   text-decoration: none;
   color: black;
+
 }
 .img {
   height: 30px;
   width: 30px;
   margin-top: 40px;
 }
-.clear {
+
+.clear{
+  clear: both;
+}
+#column2>div{
+margin-top: 65px;
+}
+#fb > .clear {
   clear: both;
 }
 #column2 > div {
