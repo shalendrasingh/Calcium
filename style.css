@@ -18,6 +18,12 @@
 .font-light {
   font-family: "open-sans";
 }
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 20px;
+}
 .textGrey {
   color: grey;
 }
@@ -536,54 +542,29 @@ style code for navbar .navbar {
   text-align: center;
   margin-top: 20px;
 }
-
-/* =============================================================================
-style code for get started section
-====================================================== */
-
-.get-started-div {
-  width: 1200px;
-  height: 600px;
-  margin: 10px 200px;
-  float: left;
-  /* clear: left; */
+/* ============================================================================
+                  style for about section starts here
+ ========================================== */
+#AboutMain {
+  /* width: 100%; */
+  height: 100%;
+  display: grid;
 }
-.getStarted-img {
-  width: 700px;
-  height: 300px;
-  margin: 20px auto;
-  background-size: contain;
-  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
-}
-.getStartedTag {
-  text-align: center;
-}
-.getStartBtn {
-  border: 1px solid red;
-  width: 220px;
-  height: 60px;
-  margin: 20px auto;
-  border-radius: 50px;
-  text-align: center;
-}
-.tryItBtn {
-  margin: 20px;
-}
-.getStartCaption {
-  margin: 10px 550px;
+.TopBox{
+  grid-area: TP;
 }
 
-/* Style sheet for about page start */
-
+.MiddleBox{
+  grid-area: MB;
+}
 h1 {
   font-size: 50px;
 }
-p {
-  font-size: 20px;
+.BottomBox{
+  grid-area: BB;
 }
-#AboutMain {
-  width: 100%;
-  height: 100%;
+.CustomerBox{
+  grid-area: CB;
 }
 #AboutMain > div {
   width: 100%;
@@ -615,7 +596,7 @@ p {
   margin-top: 5%;
   height: 65%;
 }
-.Feedback {
+#Feedback {
   width: 50px;
   height: 130px;
   position: fixed;
@@ -623,20 +604,27 @@ p {
   left: 1310px;
   background: #ff5151;
   border-radius: 5px;
+  border: 5px solid #f4f4f4;
+  border-style: initial;
 }
-.Feedback > p {
-  padding-left: 4px;
+#Feedback > p {
+  padding-left: 2px;
   padding-top: 18px;
   line-height: 1px;
   font-size: 18px;
   color: white;
   writing-mode: vertical-rl;
+  cursor: pointer;
 }
 .Feedbackimg {
   margin-top: 5px;
   margin-left: 10px;
   width: 25px;
   height: 30px;
+}
+#Feedback:hover{
+  border: 5px solid gray;
+  /* border-style: groove; */
 }
 .imgbox {
   width: 100%;
@@ -675,6 +663,73 @@ p {
 .CustomerLogo > div:nth-child(1) {
   margin-left: 5%;
 }
+#showMore{
+  color: black;
+}
+.Popdiv{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #AboutMain{
+    float: none !important;
+    grid-template-areas:  "TP"
+                          "MB"
+                          "BB"
+                          "CB"
+  }
+  .TopBoxtext{
+    width: 100% !important; 
+  }
+  .TopBoximg{
+    display: none;
+  }
+  .TopBoximg{
+    grid-area: TBi;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #AboutMain{
+    float: none !important;
+    grid-template-areas:  "TP"
+                          "MB"
+                          "BB"
+                          "CB"
+  }
+  .TopBoxtext{
+    width: 100% !important; 
+  }
+  .TopBoximg{
+    display: none;
+  }
+  .TopBoximg{
+    grid-area: TBi;
+  }
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+      #AboutMain{
+        grid-template-areas: "TP"
+                             "MB"
+                             "BB"
+                             "CB"
+      }
+      .TopBoximg{
+        display: block;
+      }
+      .TopBoxtext{
+        width: 55% !important; 
+      }
+}
+
 /* Style sheet for about page end */
 /* style for footer */
 
@@ -724,4 +779,130 @@ p {
 }
 #fb {
   margin-top: 180px;
+}
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
+}
+/* =============================================================================
+style code for Login section
+====================================================== */
+#Signinmain{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+#Signinmain>div:nth-child(1){
+  /* position: fixed; */
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  /* top: 20px; */
+}
+#Signinmain>div:nth-child(2), #Signinmain>div:nth-child(3){
+  height: 100%;
+  width: 45%;
+  border: 1px solid yellow;
+  float: left;
+}
+#Signinmain>div:nth-child(2){
+  /* position: fixed; */
+  margin-top: 0px;
+  background-color: white;
+}
+#Signinmain>div:nth-child(3){
+  position: fixed;
+  width: 54%;
+  float: left;
+  margin-left: 610px;
+  margin-bottom: 80px;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1), #Signinmain>div:nth-child(2)>div:nth-child(2), #Signinmain>div:nth-child(2)>div:nth-child(4){
+  width: 99%;
+  height: 150px;
+  border: 1px solid green;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(3){
+  width: 99%;
+  height: 180px;
+  border: 1px solid green;
+}
+#Signinmain>div:nth-child(3){
+  width: 54%;
+  height: 640px;
+  background-color: gray;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1)>h1, p{
+  font-size: 40px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  margin-left: 50px;
+  line-height: 20px;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1)>p{
+  font-size: 18px;
+  color: grey;
+}
+.loginbtn{
+  width: 80%;
+  height: 70px;
+  background-color: blue;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-left: 35px;
+  border: none;
+  border-radius: 5px;
+}
+.Gimg{
+  position: absolute;
+  width: 80px;  
+  height: 60px;
+  top: 158px;
+  left: 40px;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+.btnimg{
+  width: 80px;
+  height: 60px;
+}
+.leftbox{
+  width: 50%;
+  height: 80%;
+  border: 1px solid red;
+  margin-left: 200px;
+  margin-top: 100px;
 }
