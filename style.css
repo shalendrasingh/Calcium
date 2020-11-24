@@ -47,6 +47,9 @@
   border: 1px solid red;
   width: 1597px;
   height: 150px;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 .logo {
   float: left;
@@ -99,6 +102,9 @@
   width: 1597px;
   height: 400px;
   float: left;
+
+  margin-top: 200px;
+
 }
 
 .intro-head {
@@ -210,6 +216,7 @@
   float: left;
   clear: left;
 }
+
 
 /* trust section code  */
 .border {
@@ -379,3 +386,4 @@ p {
 #fb {
   margin-top: 180px;
 }
+
