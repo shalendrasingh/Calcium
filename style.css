@@ -1,5 +1,4 @@
 /* reuseable style code for header */
-/* reuseable style code for header */
 .font {
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -37,6 +36,10 @@
 }
 .borderRadius {
   border-radius: 40px;
+}
+.btnBackgroundColor {
+  background-color: #3367d6;
+  color: white;
 }
 
 /* style for header sectio */
@@ -101,9 +104,7 @@
   width: 1580px;
   height: 400px;
   float: left;
-  margin-top: 70px;
-
-  margin-top: 200px;
+  margin-top: 40px;
 }
 
 .intro-head {
@@ -120,46 +121,58 @@
   font-size: 24px;
 }
 
-.signup-btn-box {
+.signup-btn-cont {
+  border: 1px solid red;
   width: 800px;
-  height: 0px;
-  /* float: left; */
-  margin: 20px auto;
+  height: 150px;
+  margin: 0px auto;
 }
-.signup-btn-box div:nth-child(1),
-.signup-btn-box div:nth-child(2) {
+.btn-1 {
+  border: 1px solid red;
   width: 300px;
   height: 60px;
-  font-weight: 600;
   float: left;
-  margin-top: 20px;
-  margin-left: 80px;
+  margin: 20px 40px;
+  border-radius: 50px;
+}
+.btn-2 {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 60px;
+  margin: 20px 40px;
+
+  float: left;
+  border-radius: 50px;
 }
 
-.caption-tag {
+.icon-login {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 30px;
+  margin-top: 15px;
   float: left;
-  clear: left;
-  font-family: "Open Sans", "sans-serif";
-  font-size: 12px;
-  font-weight: 500;
-  margin: 15px 330px;
+  color: red;
+  font-size: 30px !important;
 }
-/* ==================================== */
+.sign-p {
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.caption {
+  margin: 10px 300px;
+}
 
 /* body section one style code  */
 .body-section-one {
   width: 1580px;
   height: 700px;
   float: left;
-  /* clear: left; */
-  /* margin: 10px; */
 }
 .img-showcase {
   width: 620px;
   height: 600px;
   float: left;
-  /* clear: left; */
-  /* margin: 10px; */
   margin: 20px 0px;
 
   margin-left: 150px;
@@ -174,10 +187,6 @@
   clear: right;
   margin-right: 100px;
 }
-
-/* .showcase-img-1 {
-  background-size: con;
-} */
 
 .workshowcase-r-box {
   width: 550px;
@@ -237,17 +246,13 @@
   float: left;
 }
 .span {
-  /* border: 1px solid red; */
   width: 100px;
   height: 40px;
   float: left;
   margin: 0px 24px;
   text-align: center;
-  /* margin-top: 5px; */
 }
 .a {
-  /* margin-top: 50px; */
-  /* border: 1px solid red; */
   height: 50px;
 }
 
@@ -265,30 +270,25 @@
   background-color: #f9f9f9;
 }
 .gdpr-left {
-  /* border: 1px solid red; */
   width: 250px;
   height: 150px;
   margin: 20px;
-  /* margin-left: 120px; */
   float: left;
 }
 .gdpr-right {
   float: left;
   margin: 20px;
   margin-left: 100px;
-  /* margin: auto; */
 }
 .gdpr-img-1 {
   width: 120px;
   height: 120px;
-  /* border: 1px solid red; */
   float: left;
   margin-left: 40px;
 }
 .gdpr-img-2 {
   width: 120px;
   height: 120px;
-  /* border: 1px solid red; */
   float: left;
   margin-left: 40px;
 }
@@ -299,16 +299,13 @@ h1{
   font-size: 50px;
 }
 p {
-  /* line-height: 18px; */
   font-size: 20px;
 }
 #AboutMain {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
 }
 #AboutMain > div {
-  /* border: 1px solid black; */
   width: 100%;
   height: 350px;
   margin-top: 5%;
@@ -323,7 +320,6 @@ p {
 .MiddleBox > div:nth-child(2),
 .BottomBox > div:nth-child(1),
 .BottomBox > div:nth-child(2) {
-  /* border: 1px solid yellow; */
   width: 55%;
   height: 100%;
   float: left;
@@ -375,18 +371,15 @@ p {
   text-align: center;
   width: 100%;
   height: 80px;
-  /* border: 1px solid green; */
 }
 .CustomerBox > div:nth-child(2) {
   width: 100%;
   height: 200px;
-  /* border: 1px solid red; */
 }
 .CustomerBox > div:nth-child(3) {
   text-align: center;
   width: 100%;
   height: 50px;
-  /* border: 1px solid blue; */
 }
 .CustomerLogo > div:nth-child(1),
 .CustomerLogo > div:nth-child(2),
@@ -396,7 +389,6 @@ p {
 .CustomerLogo > div:nth-child(6) {
   width: 10%;
   height: 28%;
-  /* border: 1px solid red; */
   float: left;
   margin: 3%;
 }
