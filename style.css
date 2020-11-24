@@ -293,6 +293,78 @@
   margin-left: 40px;
 }
 
+/* =======================================================================================================
+                code for body section boxes part 
+ ============================================================*/
+.market-main-div {
+  width: 1140px;
+  height: 450px;
+  margin: 10px auto;
+  margin-left: 200px;
+
+  float: left;
+  /* padding: 30px; */
+}
+.market {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.product {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.uxdesign {
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin: 20px 40px;
+}
+.build {
+  width: 240px;
+  height: 400px;
+  float: left;
+  margin: 20px 20px;
+}
+.market-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg");
+}
+.product-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg");
+}
+.uxdesign-img {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg");
+}
+.descp > h2 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.descp {
+  margin: 10px;
+}
+.build-desc {
+  margin-top: 120px;
+  text-align: left;
+}
+.build-span {
+  border: 1px solid red;
+  margin: 10px;
+}
+
 /* Style sheet for about page start */
 
 h1{
