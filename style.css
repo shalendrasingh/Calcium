@@ -301,7 +301,7 @@
   width: 1140px;
   height: 450px;
   margin: 10px auto;
-  margin-left: 200px;
+  margin-left: 230px;
 
   float: left;
   /* padding: 30px; */
@@ -364,6 +364,29 @@
 .build-span {
   border: 1px solid red;
   margin: 10px;
+}
+
+/* style for technology imageshowcase section  */
+.img-main-div {
+  width: 1200px;
+  margin: 10px auto;
+  margin-left: 200px;
+  height: 550px;
+  float: left;
+}
+.img-show {
+  width: 900;
+  height: 420px;
+  margin: 40px auto;
+  background-image: url("https://static-cms.hotjar.com/documents/brand-one-script_Twj5bMZ.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.h2-tag {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Style sheet for about page start */
