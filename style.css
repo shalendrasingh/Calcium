@@ -57,20 +57,29 @@
 
 /* style for header sectio */
 #header {
-  width: 1597px;
-  height: 100px;
+  width: 100%;
+  height: 12%;
   position: fixed;
   top: 0;
   background-color: white;
 }
 .logo {
+  width: 8%;
+  height: 80%;
+  margin-top: 10px;
+  /* border: 1px solid red; */
   float: left;
   clear: left;
+  margin-left: 5%;
 }
-.logoName {
+.logoimg{
+  width: 100%;
+  height: 100%;
+}
+/* .logoName {
   margin-top: 25px;
   margin-left: 200px;
-}
+} */
 
 /* header drop down meeting */
 .drop-btn {
@@ -573,7 +582,9 @@ style code for get started section
   margin: 10px 550px;
 }
 
-/* Style sheet for about page start */
+/* =============================================================================
+style code for header section
+====================================================== */
 
 h1 {
   font-size: 50px;
@@ -584,6 +595,7 @@ p {
 #AboutMain {
   width: 100%;
   height: 100%;
+  text-align: left;
 }
 #AboutMain > div {
   width: 100%;
@@ -650,6 +662,9 @@ p {
   height: 25px;
   float: left;
 }
+#showMore{
+  margin-right: 80%;
+}
 .CustomerBox > div:nth-child(1) {
   text-align: center;
   width: 100%;
@@ -677,6 +692,9 @@ p {
 }
 .CustomerLogo > div:nth-child(1) {
   margin-left: 5%;
+}
+.P-about{
+  text-align: left;
 }
 /* Style sheet for about page end */
 /* style for footer */
@@ -769,7 +787,7 @@ style code for Login section
 #Signinmain{
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 #Signinmain>div:nth-child(1){
   position: fixed;
@@ -781,7 +799,7 @@ style code for Login section
 #Signinmain>div:nth-child(2), #Signinmain>div:nth-child(3){
   height: 100%;
   width: 45%;
-  border: 1px solid yellow;
+  border: 1px solid white;
   float: left;
 }
 #Signinmain>div:nth-child(2){
@@ -794,17 +812,21 @@ style code for Login section
   float: left;
   margin-left: 610px;
 }
+/* remove nodes */
 #Signinmain>div:nth-child(2)>div:nth-child(1), #Signinmain>div:nth-child(2)>div:nth-child(2), #Signinmain>div:nth-child(2)>div:nth-child(4){
   width: 99%;
   height: 150px;
-  border: 1px solid green;
+  border: 1px solid white;
+}
+#Signinmain>div:nth-child(2)>div:nth-child(1),#Signinmain>div:nth-child(2)>div:nth-child(2){
+  height: 120px;
 }
 #Signinmain>div:nth-child(2)>div:nth-child(3){
   width: 99%;
-  height: 180px;
-  border: 1px solid green;
+  height: 200px;
+  border: 1px solid white;
 }
-#Signinmain>div:nth-child(3){
+#Signinmain>div:nth-child(3){ 
   width: 54%;
   height: 640px;
   background-color: #E7E8EA;
@@ -821,10 +843,16 @@ style code for Login section
   color: grey;
   margin-right: 270px;
 }
+.Loginlogoimg{
+  width: 100px;
+  height: 60px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
 .loginbtn{
   width: 80%;
   height: 70px;
-  background-color: blue;
+  background-color: #5284ED;
   font-size: 22px;
   color: white;
   text-align: center;
@@ -833,11 +861,15 @@ style code for Login section
   border: none;
   border-radius: 5px;
 }
+.loginbtn:hover{
+  cursor: pointer;
+  background-color: #3367D6;
+}
 .Gimg{
   position: absolute;
   width: 80px;  
   height: 60px;
-  top: 158px;
+  top: 127px;
   left: 40px;
   /* border: 1px solid red; */
   background-color: white;
@@ -873,5 +905,89 @@ style code for Login section
   border: 1px solid grey;
 }
 .Learnmorebtn:hover{
+  cursor: pointer;
   background-color: grey;
+}
+.logintxtbox{
+  width: 100%;
+  height: 20%;
+  border: 1px solid white;
+  display: flex;
+}
+.lftline, .midtext, .rtline{
+  width: 152px;
+  height: 3px;
+  /* border: 1px solid black; */
+  margin: 1%;
+  background-color: #E7E8EA;
+}
+.lftline, .rtline{
+  margin-top: 22px;
+}
+.lftline{
+  margin-left: 5%;
+}
+.midtext{
+  height: 20px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.Login-P{
+  font-size: 12px;
+  color: rgb(87, 87, 87);
+}
+.LoginFields>div:nth-child(1), .LoginFields>div:nth-child(2){
+  width: 100%;
+  height: 49%;
+  border: 1px solid white;
+}
+.Inputbox{
+  width: 76%;
+  height: 30%;
+  margin-left: 50px;
+  border: 1px solid rgb(206, 205, 205);
+}
+.Inputbox:hover{
+  border: 1px solid black;
+}
+.h4-Login{
+  margin-left: 50px;
+  color: rgb(46, 46, 46);
+  font-weight: lighter;
+}
+.Passwordlogin{
+  margin-left: 42%;
+  color: rgb(151, 151, 151);
+}
+.Passwordlogin:hover{
+  color: rgb(61, 61, 61);
+}
+.Signinbtn>div:nth-child(1), .Signinbtn>div:nth-child(2){
+  width: 100%;
+  height: 30%;
+  border: 1px solid white;
+}
+.Signinbtn>div:nth-child(2){
+  height: 42%;
+}
+.Labellogin{
+  color: rgb(87, 85, 85);
+  /* border: 2px solid black;  */
+  padding: 5px 10px; 
+  text-align: center; 
+  display: inline-block; 
+  font-size: 20px; 
+  margin: 10px 34px; 
+  cursor: pointer; 
+}
+.Labellogin:hover{
+  color: rgb(17, 17, 17);
+}
+.Signinbtngreen{
+  height: 60px;
+  background-color: #69BD6E;
+}
+.Signinbtngreen:hover{
+  background-color: #3CBA43; 
+  cursor: pointer;
 }
