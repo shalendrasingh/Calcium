@@ -50,7 +50,7 @@
 #header {
   border: 1px solid red;
   width: 1597px;
-  height: 150px;
+  height: 100px;
   position: fixed;
   top: 0;
   background-color: white;
@@ -82,7 +82,7 @@
   width: 1580px;
   height: 60px;
   margin: 0px 0px;
-  margin-top: 140px;
+  margin-top: 100px;
   float: left;
   clear: left;
 }
@@ -199,7 +199,6 @@
   float: right;
   margin: 20px 30px;
   margin-right: 120px;
-  border: 1px solid red;
 }
 /* this is code for behaviour and feedback */
 .showcase-tag {
@@ -270,7 +269,7 @@
   width: 900px;
   height: 200px;
   float: left;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: 350px;
   background-color: #f9f9f9;
 }
