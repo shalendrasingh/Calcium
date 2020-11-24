@@ -7,34 +7,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
     <title>About US - Hotjar</title>
-    <script src="script.js">
 
-    </script>
   </head>
   <body>
+    <!-- head section -->
+    <!-- <div id="header">
+      <div class="logo">
+        <h1 class="zeroPadMar logoName">hotjar</h1>
+      </div>
+      <div class="navbar align font">
+        <div class="zeroPadMar"><p>Product</p></div>
+        <div class=""><p>Pricing</p></div>
+        <div class=""><p>Resources</p></div>
+        <div class=""><p>Company</p></div>
+        <div class="redBackground zeroPadMar borderRadius"><p>Try it free</p></div>
+        <div class="greyBorder borderRadius zeroPadMar"><p>sign in</p></div>
+      </div>      
+    </div> -->
+    <!-- About Section Starts Here     -->
     <div id = "AboutMain">
         <div class="TopBox">
-            <div><h1>Create experiences <br>your users will love</h1>
+            <div class="TopBoxtext"><h1>Create experiences <br>your users will love</h1>
             <p>Founded in 2014, we are proud to be a self-funded, profitable, and fully distributed company on a mission to help you better understand how users behave on your website.<br>
               <br>We serve customers in 180+ countries and work with the best people around the world: our global team of over 100 Hotjarians works remotely throughout Europe, the Americas, and Africa. Hi 👋</p>
             </div>
-            <div>
+            <div class="TopBoximg">
               <img class="imgbox" src="https://static-cms.hotjar.com/images/hotjar-team-2019.original.png">
             </div>
         </div>
         <div class="MiddleBox">
-            <div><h1>What we do </h1>
+            <div class="MiddleBoxText"><h1>What we do </h1>
               <p>We help you better understand user behavior so you can make the right changes, improve UX, and grow conversions.</p>
-              <a href="#"><img class="arrowimg" src="https://www.flaticon.com/svg/static/icons/svg/271/271226.svg"/><p>Show more</p></a>
+              <a href="#"><img class="arrowimg" src="https://www.flaticon.com/svg/static/icons/svg/271/271226.svg"/><p id="showMore">Show more</p></a>
             </div>
-            <div>
+            <div class="MiddleBoximg">
               <img class="imgbox" src="https://static-cms.hotjar.com/images/what-we-do.original.jpg">
             </div>
         </div>
         <div class="BottomBox">
             <div><h1>Our values</h1>
               <p>We want to build a long-lasting, sustainable, and purposeful business with engaged team members and delighted customers.</p>
-              <a href="#"><img class="arrowimg" src="https://www.flaticon.com/svg/static/icons/svg/271/271226.svg"/><p>Show more</p></a>
+              <a href="#"><img class="arrowimg" src="https://www.flaticon.com/svg/static/icons/svg/271/271226.svg"/><p id="showMore">Show more</p></a>
             </div>
             <div>
               <img class="imgbox" src="https://static-cms.hotjar.com/images/hotjar-values.original.jpg">
@@ -50,11 +63,11 @@
               <div><img class="imgbox" src="https://www.questionpro.com/userimages/site_media/survey-monkey-logo.png"/></div>
               <div><img class="imgbox" src="https://assets.stickpng.com/images/5a1d2fbc4ac6b00ff574e29a.png"/></div>
             </div>
-            <div><p>Want to know more?<a href="#">See our product tour!</a></p></div>
+            <div><p id="showMore">Want to know more?<a href="#">See our product tour!</a></p></div>
         </div>
     </div>
-    <div class="Feedback"><p>Feedback</p><img class="Feedbackimg" src="https://www.flaticon.com/svg/static/icons/svg/1450/1450338.svg"/></div>
-
+    <div id="Feedback"><p>Feedback</p><img class="Feedbackimg" src="https://www.flaticon.com/svg/static/icons/svg/1450/1450338.svg"/></div>
+  
     <!-- Footer Section -->
     <div id="footer">
       <div id="column1">
@@ -104,5 +117,8 @@
         </span>
         </div>
     </div>
+
+    <script src="script.js">
+    </script>
   </body>
 </html>
