@@ -1,4 +1,5 @@
 /* reuseable style code for header */
+/* reuseable style code for header */
 .font {
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -82,7 +83,7 @@
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 350px;
+  width: 370px;
   height: 30px;
   float: left;
   margin-left: 150px;
@@ -101,7 +102,9 @@
   width: 1597px;
   height: 400px;
   float: left;
+
   margin-top: 200px;
+
 }
 
 .intro-head {
@@ -213,3 +216,174 @@
   float: left;
   clear: left;
 }
+
+
+/* trust section code  */
+.border {
+  border: 1px solid red;
+  width: 900px;
+  height: 200px;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.span {
+  border: 1px solid red;
+  width: 100px;
+  height: 40px;
+  float: left;
+  margin: 0px 24px;
+  text-align: center;
+  /* margin-top: 5px; */
+}
+.a {
+  /* margin-top: 50px; */
+  /* border: 1px solid red; */
+  height: 50px;
+}
+
+/* Style sheet for about page start */
+
+h {
+  font-size: 50px;
+}
+p {
+  /* line-height: 18px; */
+  font-size: 20px;
+}
+#AboutMain {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+}
+#AboutMain > div {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 350px;
+  margin-top: 5%;
+}
+#AboutMain > div:nth-child(1) {
+  height: 550px;
+  background-color: #f4f4f4;
+}
+.TopBox > div:nth-child(1),
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(1),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(1),
+.BottomBox > div:nth-child(2) {
+  /* border: 1px solid yellow; */
+  width: 55%;
+  height: 100%;
+  float: left;
+}
+.TopBox > div:nth-child(2),
+.MiddleBox > div:nth-child(2),
+.BottomBox > div:nth-child(2) {
+  width: 40%;
+  height: 90%;
+  margin: 2%;
+}
+.TopBox > div:nth-child(2) {
+  margin-top: 5%;
+  height: 65%;
+}
+.Feedback{
+  width: 50px;
+  height: 200px;
+  position: fixed;
+  top: 100px;
+  left: 1310px; 
+  background: red;
+}
+.Feedback>p{
+  padding-left: 15px;
+  line-height: 1px;
+  font-size: 15px;
+  color: white;
+} 
+.imgbox{
+  width: 100%;
+  height: 100%;
+}
+.arrowimg{
+  width: 35px;
+  height: 25px;
+  float: left;
+}
+.CustomerBox>div:nth-child(1){
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid green; */
+}
+.CustomerBox > div:nth-child(2) {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid red; */
+}
+.CustomerBox > div:nth-child(3) {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid blue; */
+}
+.CustomerLogo > div:nth-child(1),
+.CustomerLogo > div:nth-child(2),
+.CustomerLogo > div:nth-child(3),
+.CustomerLogo > div:nth-child(4),
+.CustomerLogo > div:nth-child(5),
+.CustomerLogo > div:nth-child(6) {
+  width: 10%;
+  height: 28%;
+  /* border: 1px solid red; */
+  float: left;
+  margin: 3%;
+}
+.CustomerLogo > div:nth-child(1) {
+  margin-left: 5%;
+}
+/* Style sheet for about page end */
+/* style for footer */
+
+#footer {
+  background-color: rgb(226, 223, 223);
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#column1,
+#column2,
+#column3,
+#column4 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+#column1 > a,
+#column2 > a,
+#column3 > a,
+#column4 > a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+.img {
+  height: 30px;
+  width: 30px;
+  margin-top: 40px;
+}
+.clear {
+  clear: both;
+}
+#column2 > div {
+  margin-top: 65px;
+}
+#fb {
+  margin-top: 180px;
+}
+
