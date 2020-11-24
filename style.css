@@ -615,7 +615,7 @@ p {
   margin-top: 5%;
   height: 65%;
 }
-.Feedback {
+#Feedback {
   width: 50px;
   height: 130px;
   position: fixed;
@@ -624,7 +624,7 @@ p {
   background: #ff5151;
   border-radius: 5px;
 }
-.Feedback > p {
+#Feedback > p {
   padding-left: 4px;
   padding-top: 18px;
   line-height: 1px;
@@ -637,6 +637,9 @@ p {
   margin-left: 10px;
   width: 25px;
   height: 30px;
+}
+#Feedback:hover{
+  border: 5px solid grey;
 }
 .imgbox {
   width: 100%;
