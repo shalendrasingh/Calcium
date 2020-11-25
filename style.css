@@ -1421,3 +1421,189 @@ p {
   margin: 10px;
   margin-left: 200px;
 }
+
+/* <-------------------------style for pricing----------------> */
+
+* {
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.center_text {
+  text-align: center;
+}
+
+#plan {
+  border: 1px solid red;
+  height: 300px;
+  width: 100%;
+  background-image: linear-gradient(red,yellow);
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.button_p {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: white;
+}
+
+#data {
+  height: 610px;
+  width: 60%;
+  border: 1px solid rgb(211, 206, 206);
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#h1_p{
+  padding-top: 450px;
+  font-size: 18px;
+  font-family: "Merriweather Sans", sans-serif;
+  margin-top: 100px;
+}
+
+/* styles user for creating accordian button and text */
+.accordian {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  /* for creating hover effect on button */
+  transition: 0.4s;
+}
+
+.panel {
+  padding: 0px 18px;
+  /* for hidding all the panel data */
+  display: none;
+  overflow: hidden;
+}
+
+.active,
+.accordian:hover {
+  background-color: rgb(235, 231, 231);
+
+}
+
+.accordian::before {
+  content: '\02795';
+  height: 1px;width: 1px;
+}
+
+.active::before {
+  content: '\02796';
+  height: 1px;width: 1px;
+}
+
+.faq{
+  width: 50%;
+  margin: 0px auto;
+}
+.organizations {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.organizations {
+  margin-top: 50px;
+}
+
+.img_p {
+  height: 50px;
+  width: 120px;
+  margin: 20px;
+}
+
+strong,.dark {
+  font-size: 30px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+#personal{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+  color: black;
+  /* display: none; */
+}
+.back_color{
+  background-color: rgb(250, 249, 249);
+  margin-top: 10px;
+  height: 60%;
+}
+.icon{
+  height: 20px;
+  width: 20px;
+  /* border: 1px solid red; */
+  background-color: green;
+  border-radius: 10px;
+  margin: 5px;
+  /* float: left; */
+}
+.back_color>div{
+  margin: 10px; 
+  float: left;
+}
+.clear{
+  clear: both;
+}
+.float_left{
+  float: left;
+}
+#slider{
+  width: 80%;
+}
+#business{
+  color: black;
+  display: none;
+}
+table{
+  width: 100%;
+  margin: 10px auto;
+ 
+}
+.data_collection>thead{
+  color: gray;
+}
+.tryit{
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+.check_box{
+border: 0px;
+}
+.back_color_gray{
+  background-color: rgb(255, 251, 251);
+
+
+}
+#agency{
+  color: black;
+  display: none;
+}
+.agency_img{
+  height: 180px;
+  width: 80%;
+  margin: 10px auto;
+}
+.btn_learn{
+  width: 180px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid gray;
+}
+#margin_20{
+ margin-top: 20px;
+}
+#below_data,#below_data1{
+  margin-top: 40px;
+}
+
+#start,#try{
+  margin-bottom: 20px;
+}
