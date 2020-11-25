@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-evenly;
 }
-/* #column1,#column2,#column3,#column4{ */
 
 /* reuseable style code for header */
 .font {
@@ -57,19 +56,27 @@
 
 /* style for header sectio */
 #header {
-  width: 1597px;
+  width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
   background-color: white;
 }
 .logo {
+  width: 8%;
+  height: 80%;
+  margin-top: 10px;
   float: left;
   clear: left;
+  margin-left: 5%;
 }
 .logoName {
   margin-top: 25px;
   margin-left: 200px;
+}
+.logoimg {
+  width: 100%;
+  height: 100%;
 }
 
 /* header drop down meeting */
@@ -140,8 +147,10 @@
 /* =========================================== */
 .dropdown2 {
   position: relative;
-  /* top: 15px; */
   display: inline-block;
+}
+.dropdown2 a {
+  text-decoration: none;
 }
 
 .dropdown-content-p {
@@ -176,7 +185,6 @@
 
 .dropdown3 {
   position: relative;
-  /* top: 15px; */
   display: inline-block;
 }
 
@@ -324,7 +332,6 @@ style code for navbar .navbar {
   height: 600px;
   float: left;
   margin: 20px 0px;
-
   margin-left: 150px;
   background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-size: contain;
@@ -546,7 +553,6 @@ style code for get started section
   height: 600px;
   margin: 10px 200px;
   float: left;
-  /* clear: left; */
 }
 .getStarted-img {
   width: 700px;
