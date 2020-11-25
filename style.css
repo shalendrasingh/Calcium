@@ -72,7 +72,9 @@
   clear: left;
   margin-left: 5%;
 }
-.logoimg{
+
+.logoimg {
+
   width: 100%;
   height: 100%;
 }
@@ -80,6 +82,14 @@
   margin-top: 25px;
   margin-left: 200px;
 } */
+
+.dropdown2 a {
+  text-decoration: none;
+}
+.sign-in a {
+  text-decoration: none;
+  color: black;
+}
 
 /* header drop down meeting */
 .drop-btn {
@@ -112,6 +122,38 @@
   cursor: pointer;
 }
 
+
+/* header drop down meeting */
+/* .drop-btn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.drop-btn1 {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.drop-btn2 {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.drop-btn3 {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+cursor: pointer; */}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -126,6 +168,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 
 .dropdown-content a {
   color: black;
@@ -556,6 +599,7 @@ style code for get started section
   margin: 10px 200px;
   float: left;
   /* clear: left; */
+
 }
 .getStarted-img {
   width: 700px;
@@ -567,6 +611,7 @@ style code for get started section
 .getStartedTag {
   text-align: center;
 }
+
 .getStartBtn {
   border: 1px solid red;
   width: 220px;
@@ -581,6 +626,7 @@ style code for get started section
 .getStartCaption {
   margin: 10px 550px;
 }
+
 
 /* =============================================================================
 style code for header section
@@ -627,7 +673,7 @@ p {
   margin-top: 5%;
   height: 65%;
 }
-#Feedback {
+.Feedback {
   width: 50px;
   height: 130px;
   position: fixed;
@@ -636,6 +682,7 @@ p {
   background: #ff5151;
   border-radius: 5px;
 }
+/* .Feedback > p { */
 #Feedback > p {
   padding-left: 4px;
   padding-top: 18px;
@@ -650,7 +697,8 @@ p {
   width: 25px;
   height: 30px;
 }
-#Feedback:hover{
+
+#Feedback:hover {
   border: 5px solid grey;
 }
 .imgbox {
@@ -662,7 +710,8 @@ p {
   height: 25px;
   float: left;
 }
-#showMore{
+
+#showMore {
   margin-right: 80%;
 }
 .CustomerBox > div:nth-child(1) {
@@ -693,7 +742,9 @@ p {
 .CustomerLogo > div:nth-child(1) {
   margin-left: 5%;
 }
-.P-about{
+
+.P-about {
+
   text-align: left;
 }
 /* Style sheet for about page end */
@@ -784,76 +835,89 @@ style code for get started section
 /* =============================================================================
 style code for Login section
 ====================================================== */
-#Signinmain{
+#Signinmain {
   width: 100%;
   height: 100%;
   border: 1px solid white;
-  font-family: 'Open Sans', sans-serif;
-}
+
+
 #Signinmain>div:nth-child(1){
   position: fixed;
   width: 100%;
   height: 60px;
   background-color: white;
-  top: 0.90px;
+  font-family: 'Open Sans', sans-serif;
+  top: 0.9px;
+
 }
-#Signinmain>div:nth-child(2), #Signinmain>div:nth-child(3){
+#Signinmain > div:nth-child(2),
+#Signinmain > div:nth-child(3) {
   height: 100%;
   width: 45%;
   border: 1px solid white;
   float: left;
 }
+
 #Signinmain>div:nth-child(2){
   position: fixed;
   margin-top: 53px;
   background-color: white;
 }
+
 #Signinmain>div:nth-child(3){
   width: 54%;
   float: left;
   margin-left: 610px;
 }
 /* remove nodes */
-#Signinmain>div:nth-child(2)>div:nth-child(1), #Signinmain>div:nth-child(2)>div:nth-child(2), #Signinmain>div:nth-child(2)>div:nth-child(4){
+
+#Signinmain > div:nth-child(2) > div:nth-child(1),
+#Signinmain > div:nth-child(2) > div:nth-child(2),
+#Signinmain > div:nth-child(2) > div:nth-child(4) {
   width: 99%;
   height: 150px;
   border: 1px solid white;
 }
-#Signinmain>div:nth-child(2)>div:nth-child(1),#Signinmain>div:nth-child(2)>div:nth-child(2){
+
+#Signinmain > div:nth-child(2) > div:nth-child(1),
+#Signinmain > div:nth-child(2) > div:nth-child(2) {
   height: 120px;
 }
-#Signinmain>div:nth-child(2)>div:nth-child(3){
+#Signinmain > div:nth-child(2) > div:nth-child(3) {
   width: 99%;
   height: 200px;
   border: 1px solid white;
 }
-#Signinmain>div:nth-child(3){ 
+
+#Signinmain > div:nth-child(3) {
   width: 54%;
   height: 640px;
-  background-color: #E7E8EA;
+  background-color: #e7e8ea;
 }
-#Signinmain>div:nth-child(2)>div:nth-child(1)>h1{
+#Signinmain > div:nth-child(2) > div:nth-child(1) > h1 {
+
   font-size: 40px;
   font-family: "Open Sans";
   font-weight: lighter;
   margin-left: 33px;
   line-height: 20px;
 }
-#Signinmain>div:nth-child(2)>div:nth-child(1)>p{
+#Signinmain > div:nth-child(2) > div:nth-child(1) > p {
   font-size: 18px;
   color: grey;
   margin-right: 270px;
 }
-.Loginlogoimg{
+
+.Loginlogoimg {
   width: 100px;
   height: 60px;
   /* border: 1px solid black; */
   margin: auto;
 }
-.loginbtn{
+.loginbtn {
   width: 80%;
   height: 70px;
-  background-color: #5284ED;
+  background-color: #5284ed;
   font-size: 22px;
   color: white;
   text-align: center;
@@ -862,6 +926,7 @@ style code for Login section
   border-radius: 5px;
   display: flex;
 }
+
 .loginbtn:hover{
   cursor: pointer;
   background-color: #3367D6;
@@ -993,9 +1058,9 @@ style code for Login section
   background-color: #3CBA43; 
   cursor: pointer;
 }
-/* =============================================================================
-style code for ResetPassword section
-====================================================== */
+/* =============================================================================*/
+/*style code for ResetPassword section*/
+/*====================================================== */
 .Forgotpass-P{
   text-align: left;
   margin-left: 40px;
@@ -1029,9 +1094,9 @@ style code for ResetPassword section
 .Goback:hover{
   color: rgb(75, 75, 75);
 }
-/* =============================================================================
-style code for Sign Up section
-====================================================== */
+/* =============================================================================*/
+/*style code for Sign Up section*/
+/*====================================================== */
 .Signupcontainer{
   width: 100%;
   height: 550px;
@@ -1083,3 +1148,4 @@ style code for Sign Up section
   height: 170px;
   /* border: 1px solid black; */
 }
+
