@@ -857,27 +857,26 @@ style code for Login section
   font-size: 22px;
   color: white;
   text-align: center;
-  position: relative;
   margin-left: 35px;
   border: none;
   border-radius: 5px;
+  display: flex;
 }
 .loginbtn:hover{
   cursor: pointer;
   background-color: #3367D6;
 }
-.Gimg{
-  position: absolute;
-  width: 80px;  
-  height: 60px;
-  top: 127px;
-  left: 40px;
-  /* border: 1px solid red; */
-  background-color: white;
-}
 .btnimg{
+  margin-right: 30px;
   width: 80px;
   height: 60px;
+  margin-top: 3.8px;
+}
+.Glogotxt{
+  cursor: pointer;
+  padding-top: 23px;
+  color: rgb(255, 255, 255);
+  margin-right: 130px;
 }
 .leftbox{
   width: 90%;
@@ -985,6 +984,8 @@ style code for Login section
   color: rgb(17, 17, 17);
 }
 .Signinbtngreen{
+  padding-top: 16px;
+  padding-left: 190px;
   height: 60px;
   background-color: #69BD6E;
 }
@@ -1020,10 +1021,65 @@ style code for ResetPassword section
   width: 300px;
   margin-left: 32px;
   margin-top: 20px;
+  padding-left: 60px;
 }
 .Goback{
   color: grey;
 }
 .Goback:hover{
   color: rgb(75, 75, 75);
+}
+/* =============================================================================
+style code for Sign Up section
+====================================================== */
+.Signupcontainer{
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid black; */
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.Signupcontainer>h2{
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+.Signuplogo{
+  width: 450px;
+  margin-left: 440px;
+  margin-top: 40px;
+}
+.Signuplftline{
+  margin-top: 32px;
+  margin-left: 430px;
+  width: 205px;
+}
+.Signupmidtext{
+  width: 20px;
+}
+.Signupmidtext>p{
+  font-size: 15px !important;
+}
+.Signuprtline{
+  margin-top: 32px;
+  width: 190px;
+}
+.Signupbtngreen{
+  width: 450px;
+  height: 70px;
+  margin-left: 440px;
+  margin-top: 10px;
+}
+.Signuptxtbox{
+  height: 50px;
+}
+.Signup-P{
+  margin-top: 30px;
+  margin-right: 220px;
+  font-size: 13px;
+}
+.Signupbottomlogo{
+  width: 250px;
+  height: 170px;
+  /* border: 1px solid black; */
 }
