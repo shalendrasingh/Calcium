@@ -1,230 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pricing</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <style type="text/css">
-        /* bb* {
-            font-family: "open-sans";
-            font-size: 18px;
-        } */
-
-        .center_text {
-            text-align: center;
-        }
-
-        #plan {
-            border: 1px solid red;
-            height: 300px;
-            width: 100%;
-            background-image: linear-gradient(red,yellow);
-            color: white;
-            text-align: center;
-            padding-top: 100px;
-        }
-         
-
-        .button_p {
-            height: 50px;
-            width: 100px;
-            background-color: white;
-            border: white;
-        }
-
-        #data {
-            height: 600px;
-            width: 50%;
-            border: 1px solid rgb(211, 206, 206);
-            margin: 10px auto;
-            background-color: white;
-        }
-
-        #h1_p{
-            padding-top: 450px;
-            font-size: 18px;
-            font-family: "Merriweather Sans", sans-serif;
-            margin-top: 20px;
-        }
-
-        /* styles user for creating accordian button and text */
-        .accordian {
-            cursor: pointer;
-            width: 100%;
-            text-align: left;
-            /* for creating hover effect on button */
-            transition: 0.4s;
-        }
-
-        .panel {
-            padding: 0px 18px;
-            /* for hidding all the panel data */
-            display: none;
-            overflow: hidden;
-        }
-
-        .active,
-        .accordian:hover {
-            background-color: rgb(235, 231, 231);
-
-        }
-
-        .accordian::before {
-            content: '\02795';
-            height: 1px;width: 1px;
-        }
-
-        .active::before {
-            content: '\02796';
-            height: 1px;width: 1px;
-        }
-
-        .faq{
-            width: 50%;
-            margin: 0px auto;
-        }
-        .organizations {
-            width: 60%;
-            margin: 0px auto;
-        }
-
-        .organizations {
-            margin-top: 50px;
-        }
-
-        .img_p {
-            height: 50px;
-            width: 120px;
-            margin: 20px;
-        }
-
-        strong,.dark {
-            font-size: 30px;
-            font-family: "Merriweather Sans", sans-serif;
-        }
-        #personal{
-            display: flex;
-            justify-content: space-evenly;
-            margin: 15px;
-            color: black;
-            /* display: none; */
-        }
-        .back_color{
-            background-color: rgb(243, 237, 237);
-            margin-top: 10px;
-            height: 60%;
-        }
-        .icon{
-            height: 20px;
-            width: 20px;
-            border: 1px solid red;
-            background-color: green;
-            border-radius: 10px;
-            margin: 5px;
-            /* float: left; */
-        }
-        .back_color>div{
-            margin: 10px; 
-            float: left;
-        }
-        .clear{
-            clear: both;
-        }
-        .float_left{
-            float: left;
-        }
-        #slider{
-            width: 80%;
-        }
-        #business{
-            color: black;
-            display: none;
-        }
-        table{
-            width: 100%;
-            margin: 10px auto;
-           
-        }
-        .data_collection>thead{
-            color: gray;
-        }
-        .tryit{
-            height: 30px;
-            border-radius: 5px;
-            margin: 10px 0px;
-        }
-        .check_box{
-         border: 0px;
-        }
-        .back_color_gray{
-            background-color: rgb(241, 235, 235);
-       
-        
-        }
-        #agency{
-            color: black;
-            display: none;
-        }
-        .agency_img{
-            height: 180px;
-            width: 80%;
-            margin: 10px auto;
-        }
-        .btn_learn{
-            width: 180px;
-            margin: 0px 10px;
-            border-radius: 5px;
-            height: 30px;
-            border: 1px solid gray;
-        }
-        #margin_20{
-           margin-top: 20px;
-        }
-        #below_data,#below_data1{
-            margin-top: 30px;
-        }
-        #footer{
-        background-color: rgb(226, 223, 223);
-        height: 460px;
-        width: 100%;   
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #column1,#column2,#column3,#column4{
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-        padding-bottom: 20px;
-    }
-    #column1>a, #column2>a, #column3>a, #column4>a{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-decoration: none;
-         color: black; 
-    }
-    .img {
-        height: 30px;
-        width: 30px;
-        margin-top: 40px;
-    }
-    #column2>div{
-     margin-top: 65px;
-    }
-    #fb{
-        margin-top: 180px;
-    }
-    </style>
+   
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
 </head>
-
 <body>
-    <div id="plan">
-        <strong >Find the right plan for your site:</strong>
-        <div>
+    <!-- header part -->
+    <div id="header">
+        <div class="logo">
+          <img class="logoimg" src="https://jamesganderson.co.uk/wp-content/uploads/2019/01/hotjar_logo.jpg"/>
+        </div>
+        <div class="navbar align font">
+          <div class="dropdown1"><p class="drop-btn1">Product</p>
+          
+            <div class="dropdown-content-p">
+              <a href="#">Heatmaps </a>
+              <a href="#">Recording</a>
+              <a href="#">Incoming Feedback</a>
+              <a href="#">Surveys</a>
+          </div>
+          
+          </div>
+          <div class="dropdown2"><a href="#"><p class="drop-btn2">Pricing</p></a> </div>
+  
+          <div class="dropdown3"><p class="drop-btn3">Resources</p>
+          <div class="dropdown-content-r">
+              <a href="#">Guides </a>
+              <a href="#">Blog</a>
+              <a href="#">Suport documents</a>
+              <a href="#">Privacy & Hotjar</a>
+          </div>
+          </div>
+  
+          <div class="dropdown"><p class="drop-btn">Company</p>
+          <div class="dropdown-content">
+              <a href="#">About us</a>
+              <a href="#">Careers</a>
+              <a href="#">Case studies</a>
+          </div>
+          </div>
+          <div class="redBackground zeroPadMar borderRadius"><p>Try it free</p></div>
+          <div class="greyBorder borderRadius zeroPadMar"><p>sign in</p></div>
+        </div> 
+        
+      </div>
+
+      <!-- ///body part -->
+      <div id="plan">
+        <strong id="big_heading">Find the right plan for your site:</strong>
+        <div id="margin_20">
             <button class="button_p" id="personal_btn">Personal</button>
             <button class="button_p" id="business_btn">Business</button>
             <button class="button_p" id="agency_btn">Agency</button>
@@ -246,12 +77,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span><img class="icon" src="#"/></span>Unlimited client sites in one</br> central account</td>
-                            <td><span><img class="icon" src="#"/></span>  Invite client users to see and </br>manage their data  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span>Unlimited client sites in one</br> central account</td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span>  Invite client users to see and </br>manage their data  </td>
                         </tr>
                         <tr>
-                            <td><span><img class="icon" src="#"/></span>Discount volume pricing </td>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span>Discount volume pricing </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
                         </tr>
                     </tbody>
                 </table>
@@ -265,27 +96,27 @@
                     <div>Collect data from:</br> <strong>2,000 Pageviews/day</strong></div>
                      <div class="back_color" id="below_data">
                          
-                      <div><span><img class="icon" src="#"/></span> Limited reports</div>
+                      <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Limited reports</div>
                       
-                      <div class="float_left"><span><img class="icon" src="#"/></span> Unlimited team members</div>
-                      <div><span><img class="icon" src="#"/></span> 100 recordings per snapshot</div>
-                      <div><span><img class="icon" src="#"/></span> Store up to 300 recordings</div>
-                      <div><span><img class="icon" src="#"/></span> Data storage for 365 days</div>
+                      <div class="float_left"><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Unlimited team members</div>
+                      <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> 100 recordings per snapshot</div>
+                      <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Store up to 300 recordings</div>
+                      <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days</div>
                      </div>
                 </div>
                 <div id="plus">
                     <strong>PLUS</strong>
                     <div>For low-traffic sites & early stage-startups.</div>
-                    <h2>&#36;/Month</h2>
+                    <h2>99&#36;/Month</h2>
                     <button id="try">TRY IT</button>
                     <div>Collect data from:</br> <strong>10,000 Pageviews/day</strong></div>
                     <div class="back_color" id="below_data1">
-                        <div><span><img class="icon" src="#"/></span> Limited reports</div>
+                        <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Limited reports</div>
                         <!-- <div class="clear"></div> -->
-                        <div><span><img class="icon" src="#"/></span> Unlimited team members</div>
-                        <div><span><img class="icon" src="#"/></span> 100 recordings per snapshot</div>
-                        <div><span><img class="icon" src="#"/></span> Store up to 300 recordings</div>
-                        <div><span><img class="icon" src="#"/></span> Data storage for 365 days</div>
+                        <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Unlimited team members</div>
+                        <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> 100 recordings per snapshot</div>
+                        <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Store up to 300 recordings</div>
+                        <div><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days</div>
                        </div>
                 </div> 
             </div>
@@ -341,16 +172,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days</td>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days</td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
                         </tr>
                         <tr>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
                         </tr>
                         <tr>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
-                            <td><span><img class="icon" src="#"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
+                            <td><span><img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/845/845646.svg"/></span> Data storage for 365 days  </td>
                         </tr>
                     </tbody>
                 </table>
@@ -503,85 +334,7 @@
           </div>
           
       </div>
-      
- 
 
-    <script type="text/javascript">
-    var personal_btn=document.getElementById("personal_btn");
-    var business_btn=document.getElementById("business_btn");
-    var agency_btn=document.getElementById("agency_btn");
-    var business_data=document.getElementById('business');
-    var perosnal_data=document.getElementById('personal');
-    var agency_data=document.getElementById('agency');
-    var data_plan=document.getElementById('plan');
-        var acc = document.getElementsByClassName("accordian");
-        for (var i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                // toggle bet adding and removing 
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            })
-        }
-
-        var slider=document.getElementById("slider");
-        var output=document.getElementById("slider-data");
-        output.innerHTML=slider.value;
-         var check_box1=document.getElementById("check_box1");
-         var slider_value=Number(output.innerHTML);
-       console.log(slider_value)
-        if(slider_value<20000){
-           console.log(check_box1);
-          check_box1.checked=true;
-        }
-
-        // to show the selected value on slider to output
-        slider.oninput=function(){
-            output.innerHTML=this.value;
-        }
-
-        var try_button=document.getElementsByClassName('tryit');
-        function change_red(event){
-            var item=event.target;
-            item.style.backgroundColor="red";
-            item.style.color="white";
-        }
-        for(var i=0;i<try_button.length;i++){
-            try_button[i].addEventListener('click',change_red);
-        }
-        function personal(event){
-            
-            perosnal_data.style.display='flex';
-            business_data.style.display='none';
-            agency_data.style.display='none';
-            data_plan.style.background = `linear-gradient(blue,pink)`;
-            event.target.style.background=`linear-gradient(blue,pink)`;
-            
-        }
-        function business(event){
-            // var business_data=document.getElementById('business');
-            business_data.style.display='block';
-            agency_data.style.display='none';
-            perosnal_data.style.display='none';
-            data_plan.style.background = `linear-gradient(pink,yellow)`;
-            event.target.style.background=`linear-gradient(pink,yellow)`;
-        }
-        function agency(event){
-           
-            agency_data.style.display='block';
-            perosnal_data.style.display='none';
-            business_data.style.display='none';
-            data_plan.style.background = `linear-gradient(skyblue,green)`;
-            event.target.style.background=`linear-gradient(skyblue,green)`;
-        }
-        personal_btn.addEventListener('click',personal);
-        business_btn.addEventListener('click',business);
-        agency_btn.addEventListener('click',agency);
-    </script>
+      <script src="pricingscript.js"></script>
 </body>
-
 </html>
