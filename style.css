@@ -57,7 +57,7 @@
 /* style for header sectio */
 #header {
   width: 100%;
-  height: 100px;
+  height: 12%;
   position: fixed;
   top: 0;
   background-color: white;
@@ -70,9 +70,18 @@
   clear: left;
   margin-left: 5%;
 }
-.logoName {
-  margin-top: 25px;
-  margin-left: 200px;
+
+.logoimg {
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown2 a {
+  text-decoration: none;
+}
+.sign-in a {
+  text-decoration: none;
+  color: black;
 }
 .logoimg {
   width: 100%;
@@ -109,6 +118,8 @@
   border: none;
   cursor: pointer;
 }
+
+/* header drop down menu */
 
 .dropdown {
   position: relative;
@@ -221,7 +232,8 @@
   background-color: red;
 }
 
-style code for navbar .navbar {
+/* style code for navbar */
+.navbar {
   margin-top: 10px;
   margin-right: 60px;
   float: right;
@@ -564,6 +576,7 @@ style code for get started section
 .getStartedTag {
   text-align: center;
 }
+
 .getStartBtn {
   border: 1px solid red;
   width: 220px;
@@ -579,7 +592,9 @@ style code for get started section
   margin: 10px 550px;
 }
 
-/* Style sheet for about page start */
+/* =============================================================================
+style code for header section
+====================================================== */
 
 h1 {
   font-size: 50px;
@@ -590,6 +605,7 @@ p {
 #AboutMain {
   width: 100%;
   height: 100%;
+  text-align: left;
 }
 #AboutMain > div {
   width: 100%;
@@ -630,7 +646,8 @@ p {
   background: #ff5151;
   border-radius: 5px;
 }
-.Feedback > p {
+/* .Feedback > p { */
+#Feedback > p {
   padding-left: 4px;
   padding-top: 18px;
   line-height: 1px;
@@ -644,6 +661,10 @@ p {
   width: 25px;
   height: 30px;
 }
+
+#Feedback:hover {
+  border: 5px solid grey;
+}
 .imgbox {
   width: 100%;
   height: 100%;
@@ -652,6 +673,10 @@ p {
   width: 35px;
   height: 25px;
   float: left;
+}
+
+#showMore {
+  margin-right: 80%;
 }
 .CustomerBox > div:nth-child(1) {
   text-align: center;
@@ -680,6 +705,10 @@ p {
 }
 .CustomerLogo > div:nth-child(1) {
   margin-left: 5%;
+}
+
+.P-about {
+  text-align: left;
 }
 /* Style sheet for about page end */
 /* style for footer */
@@ -730,4 +759,359 @@ p {
 }
 #fb {
   margin-top: 180px;
+}
+/* =============================================================================
+style code for get started section
+====================================================== */
+
+.get-started-div {
+  width: 1200px;
+  height: 600px;
+  margin: 10px 200px;
+  float: left;
+  /* clear: left; */
+}
+.getStarted-img {
+  width: 700px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: contain;
+  background-image: url("https://static-cms.hotjar.com/original_images/brand-get-started.jpg");
+}
+.getStartedTag {
+  text-align: center;
+}
+.getStartBtn {
+  border: 1px solid red;
+  width: 220px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 50px;
+  text-align: center;
+}
+.tryItBtn {
+  margin: 20px;
+}
+.getStartCaption {
+  margin: 10px 550px;
+}
+/* =============================================================================
+style code for Login section
+====================================================== */
+#Signinmain {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+#Signinmain > div:nth-child(1) {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  top: 0.9px;
+}
+#Signinmain > div:nth-child(2),
+#Signinmain > div:nth-child(3) {
+  height: 100%;
+  width: 45%;
+  border: 1px solid white;
+  float: left;
+}
+
+#Signinmain > div:nth-child(2) {
+  position: fixed;
+  margin-top: 53px;
+  background-color: white;
+}
+
+#Signinmain > div:nth-child(3) {
+  width: 54%;
+  float: left;
+  margin-left: 610px;
+}
+/* remove nodes */
+
+#Signinmain > div:nth-child(2) > div:nth-child(1),
+#Signinmain > div:nth-child(2) > div:nth-child(2),
+#Signinmain > div:nth-child(2) > div:nth-child(4) {
+  width: 99%;
+  height: 150px;
+  border: 1px solid white;
+}
+
+#Signinmain > div:nth-child(2) > div:nth-child(1),
+#Signinmain > div:nth-child(2) > div:nth-child(2) {
+  height: 120px;
+}
+#Signinmain > div:nth-child(2) > div:nth-child(3) {
+  width: 99%;
+  height: 200px;
+  border: 1px solid white;
+}
+
+#Signinmain > div:nth-child(3) {
+  width: 54%;
+  height: 640px;
+  background-color: #e7e8ea;
+}
+#Signinmain > div:nth-child(2) > div:nth-child(1) > h1 {
+  font-size: 40px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  margin-left: 33px;
+  line-height: 20px;
+}
+#Signinmain > div:nth-child(2) > div:nth-child(1) > p {
+  font-size: 18px;
+  color: grey;
+  margin-right: 270px;
+}
+
+.Loginlogoimg {
+  width: 100px;
+  height: 60px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.loginbtn {
+  width: 80%;
+  height: 70px;
+  background-color: #5284ed;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  margin-left: 35px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+}
+
+.loginbtn:hover {
+  cursor: pointer;
+  background-color: #3367d6;
+}
+.btnimg {
+  margin-right: 30px;
+  width: 80px;
+  height: 60px;
+  margin-top: 3.8px;
+}
+.Glogotxt {
+  cursor: pointer;
+  padding-top: 23px;
+  color: rgb(255, 255, 255);
+  margin-right: 130px;
+}
+.leftbox {
+  width: 90%;
+  height: 80%;
+  /* border: 1px solid red; */
+  margin-left: 30px;
+  margin-top: 80px;
+}
+.Jarimg {
+  width: 100%;
+  height: 100%;
+}
+.leftboxtxt > h2,
+p {
+  text-align: center;
+}
+.leftboxtxt > p {
+  font-size: 15px;
+  line-height: 1px;
+  color: grey;
+}
+.Learnmorebtn {
+  width: 100px;
+  height: 50px;
+  margin-left: 42%;
+  background-color: #e7e8ea;
+  border: 1px solid grey;
+}
+.Learnmorebtn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+.logintxtbox {
+  width: 100%;
+  height: 20%;
+  border: 1px solid white;
+  display: flex;
+}
+.lftline,
+.midtext,
+.rtline {
+  width: 152px;
+  height: 3px;
+  /* border: 1px solid black; */
+  margin: 1%;
+  background-color: #e7e8ea;
+}
+.lftline,
+.rtline {
+  margin-top: 22px;
+}
+.lftline {
+  margin-left: 5%;
+}
+.midtext {
+  height: 20px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+.Login-P {
+  font-size: 12px;
+  color: rgb(87, 87, 87);
+}
+.LoginFields > div:nth-child(1),
+.LoginFields > div:nth-child(2) {
+  width: 100%;
+  height: 49%;
+  border: 1px solid white;
+}
+.Inputbox {
+  width: 76%;
+  height: 30%;
+  margin-left: 50px;
+  border: 1px solid rgb(206, 205, 205);
+}
+.Inputbox:hover {
+  border: 1px solid black;
+}
+.h4-Login {
+  margin-left: 50px;
+  color: rgb(46, 46, 46);
+  font-weight: lighter;
+}
+.Passwordlogin {
+  margin-left: 42%;
+  color: rgb(151, 151, 151);
+}
+.Passwordlogin:hover {
+  color: rgb(61, 61, 61);
+}
+.Signinbtn > div:nth-child(1),
+.Signinbtn > div:nth-child(2) {
+  width: 100%;
+  height: 30%;
+  border: 1px solid white;
+}
+.Signinbtn > div:nth-child(2) {
+  height: 42%;
+}
+.Labellogin {
+  color: rgb(87, 85, 85);
+  /* border: 2px solid black;  */
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 34px;
+  cursor: pointer;
+}
+.Labellogin:hover {
+  color: rgb(17, 17, 17);
+}
+.Signinbtngreen {
+  padding-top: 16px;
+  padding-left: 190px;
+  height: 60px;
+  background-color: #69bd6e;
+}
+.Signinbtngreen:hover {
+  background-color: #3cba43;
+  cursor: pointer;
+}
+/* =============================================================================*/
+/*style code for ResetPassword section*/
+/*====================================================== */
+.Forgotpass-P {
+  text-align: left;
+  margin-left: 40px;
+  font-size: 15px !important;
+}
+.FP-h1 {
+  margin-top: 60px;
+  margin-left: 40px !important;
+}
+.LoginFields-FP {
+  margin-top: 75px;
+}
+.Inputbox-FP {
+  margin-left: 35px;
+  height: 35px;
+  width: 450px;
+}
+.Strong-FP {
+  font-size: 13px;
+  margin-left: 35px;
+}
+.Submitbtn-FP {
+  width: 300px;
+  margin-left: 32px;
+  margin-top: 20px;
+  padding-left: 60px;
+}
+.Goback {
+  color: grey;
+}
+.Goback:hover {
+  color: rgb(75, 75, 75);
+}
+/* =============================================================================*/
+/*style code for Sign Up section*/
+/*====================================================== */
+.Signupcontainer {
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid black; */
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+.Signupcontainer > h2 {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+.Signuplogo {
+  width: 450px;
+  margin-left: 440px;
+  margin-top: 40px;
+}
+.Signuplftline {
+  margin-top: 32px;
+  margin-left: 430px;
+  width: 205px;
+}
+.Signupmidtext {
+  width: 20px;
+}
+.Signupmidtext > p {
+  font-size: 15px !important;
+}
+.Signuprtline {
+  margin-top: 32px;
+  width: 190px;
+}
+.Signupbtngreen {
+  width: 450px;
+  height: 70px;
+  margin-left: 440px;
+  margin-top: 10px;
+}
+.Signuptxtbox {
+  height: 50px;
+}
+.Signup-P {
+  margin-top: 30px;
+  margin-right: 220px;
+  font-size: 13px;
+}
+.Signupbottomlogo {
+  width: 250px;
+  height: 170px;
+  /* border: 1px solid black; */
 }
