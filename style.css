@@ -660,8 +660,8 @@ p {
   width: 50px;
   height: 150px;
   position: fixed;
-  top: 200px;
-  left: 1310px;
+  top: 30%;
+  left: 97%;
   background: #ff5151;
   border-radius: 5px;
 }
