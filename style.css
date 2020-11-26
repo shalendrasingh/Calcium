@@ -23,7 +23,6 @@
 .align {
   text-align: center;
 }
-
 .border {
   border: 1px solid red;
 }
@@ -34,7 +33,6 @@
   padding: 0px;
   margin: 0px;
 }
-
 .redBackground {
   background-color: red;
   color: white;
@@ -57,7 +55,7 @@
 /* style for header sectio */
 #header {
   width: 100%;
-  height: 12%;
+  height: 14%;
   position: fixed;
   top: 0;
   background-color: white;
@@ -83,13 +81,19 @@
   text-decoration: none;
   color: black;
 }
+
+.h-try-btn > a {
+  color: white;
+  text-decoration: none;
+}
 .logoimg {
+r
   width: 100%;
   height: 100%;
-}
+} */
 
 /* header drop down meeting */
-.drop-btn {
+.drop-btn, .drop-btn1, .drop-btn2, .drop-btn3 {
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -97,7 +101,7 @@
   cursor: pointer;
 }
 
-.drop-btn1 {
+/* .drop-btn1 {
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -117,7 +121,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
+} */
 
 /* header drop down menu */
 
@@ -247,27 +251,31 @@
 }
 
 .notice {
-  width: 1580px;
-  height: 60px;
-  margin: 0px 0px;
-  margin-top: 100px;
+  width: 100%;
+  height: 40px;
+  margin-top: 120px;
   float: left;
   clear: left;
 }
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 390px;
-  height: 30px;
+  width: 30%;
   float: left;
-  margin-left: 120px;
 }
 
+.notice div:nth-child(1) > p,
+.notice div:nth-child(2) > p,
+.notice div:nth-child(3) > p {
+  font-size: 14px;
+  margin-left: 1%;
+}
 /* style code for icons */
 .icon-check {
-  font-size: 30px !important;
+  font-size: 24px !important;
   float: left;
-  margin: 20px;
+  margin: 10px;
+  margin-left: 200px;
   color: red;
 }
 
@@ -330,7 +338,8 @@
   margin-top: 20px;
 }
 .caption {
-  margin: 10px 300px;
+  font-size: 12px;
+  margin: 10px 200px;
 }
 
 /* body section one style code  */
@@ -466,63 +475,67 @@
                 code for body section boxes part 
  ============================================================*/
 .market-main-div {
-  width: 1140px;
-  height: 450px;
+  width: 75%;
+  height: 500px;
   margin: 30px auto;
   margin-left: 230px;
   float: left;
 }
 .market {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .product {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .uxdesign {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .build {
-  width: 240px;
+  width: 18%;
   height: 400px;
   float: left;
   margin: 20px 20px;
 }
 .market-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg");
 }
 .product-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg");
 }
 .uxdesign-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg");
 }
 .descp > h2 {
   padding: 0px;
   margin: 0px;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 5px !important;
+  margin-left: 10px !important;
 }
-.descp {
-  margin: 10px;
-}
+
 .build-desc {
   margin-top: 120px;
   text-align: left;
@@ -585,6 +598,10 @@ style code for get started section
   border-radius: 50px;
   text-align: center;
 }
+.getStartBtn > a {
+  text-decoration: none;
+  color: white;
+}
 .tryItBtn {
   margin: 20px;
 }
@@ -637,9 +654,9 @@ p {
   margin-top: 5%;
   height: 65%;
 }
-.Feedback {
+#Feedback {
   width: 50px;
-  height: 130px;
+  height: 150px;
   position: fixed;
   top: 200px;
   left: 1310px;
@@ -654,16 +671,16 @@ p {
   font-size: 18px;
   color: white;
   writing-mode: vertical-rl;
-}
+} 
 .Feedbackimg {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: 10px;
   width: 25px;
   height: 30px;
-}
+} 
 
 #Feedback:hover {
-  border: 5px solid grey;
+  box-shadow:20px 20px 50px 15px grey;
 }
 .imgbox {
   width: 100%;
@@ -793,7 +810,8 @@ style code for get started section
   margin: 20px;
 }
 .getStartCaption {
-  margin: 10px 550px;
+  font-size: 14px;
+  margin: 10px 540px;
 }
 /* =============================================================================
 style code for Login section
@@ -1038,7 +1056,7 @@ p {
   margin-left: 40px !important;
 }
 .LoginFields-FP {
-  margin-top: 75px;
+  margin-top: 80px;
 }
 .Inputbox-FP {
   margin-left: 35px;
@@ -1047,7 +1065,7 @@ p {
 }
 .Strong-FP {
   font-size: 13px;
-  margin-left: 35px;
+  padding-right: 20px;
 }
 .Submitbtn-FP {
   width: 300px;
@@ -1115,6 +1133,441 @@ p {
   height: 170px;
   /* border: 1px solid black; */
 }
+/* =======================================================================================================
+                code for Careers part 
+ ============================================================*/
+#Careersmaincontainer{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  background-image: url("https://d27i7n2isjbnbi.cloudfront.net/careers/photos/98820/normal_photo_1549035144.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.Careersnavbar{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+}
+.Careersnavbar>div:nth-child(1){
+  margin-left: 5%;
+  width: 10%;
+  height: 90%;
+  /* border: 1px solid black; */
+}
+.Careersnavbar>div:nth-child(2), .Careersnavbar>div:nth-child(3), 
+.Careersnavbar>div:nth-child(4), .Careersnavbar>div:nth-child(5){
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 6%;
+  height: 60%;
+  /* border: 1px solid black; */
+}
+.Careersnavbutton{
+  margin-left: 25%;
+  margin-top: 1.5%;
+  height: 65%;
+  width: 12%;
+  background-color: rgb(255, 64, 64);
+  text-align: left;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+.Careersnavbutton:hover{
+  background-color: red;
+}
+.Careersnavbar>div:nth-child(7), .Careersnavbar>div:nth-child(8), .Careersnavbar>div:nth-child(9){
+  margin-top: 3%;
+  margin-left: 2%;
+  width: 2%;
+  height: 30%;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+}
+.Careers-a{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(252, 106, 106);
+}
+.Careers-a:hover{
+  color: rgb(255, 0, 0);
+}
+/* .Careersnavbuttonimg{
+  width: 35%;
+  height: 100%;
+  margin-left: 20px;
+} */
+.Careerlab{
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#Careerculture{
+  margin-top: 300px;
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+.Careers-h1{
+  padding-top: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+#Careerculture>p{
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(138, 138, 138);
+}
+.Careerli{
+  font-size: 18px;
+  text-align: left;
+  color: rgb(138, 138, 138); 
+}
+.Careerhref{
+  color: rgb(253, 72, 72);
+}
+.Careerhref:hover{
+  color: rgb(255, 0, 0);
+}
+#Careersperk{
+  width: 100%;
+  height: 550px;
+  background-color: wheat;
+  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2018/07/270-niwat5455546521-chim.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: brightness(10%); */
+}
+#Careersperk>h2{
+  margin: 0px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+#Careersperk>p{
+  color: rgb(160, 160, 160);
+}
+.li1,.li2,.li3{
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  padding-left:8%;
+}
+.Lovework{
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.Lovework>strong{
+  font-size: 30px;
+}
+.Lovework>strong{
+  margin-right: 6%;
+}
+.Lovework>h3{
+  color: grey;
+}
+.Dreamjob{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+.Careervideo{
+  width: 100%;
+  height: 700px;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+.Careervideo>iframe{
+  margin-left: 5%;
+}
+.Careerrecruitment{
+ width: 100%;
+ height: 200px;
+ /* border: 1px solid black; */
+}
+.Careerrecruitmentimg{
+  width: 100%;
+  height: 100%;
+}
+#Joblist{
+  width: 100%;
+  height: 1200px;
+  background-color: white;
+}
+#Joblist>div:nth-child(1){
+  width: 80%;
+  height: 100px;
+  border: 1px solid #CCD1D9;
+  margin: auto;
+  border-radius: 5px;
+}
+#Joblist>div:nth-child(2), #Joblist>div:nth-child(3), #Joblist>div:nth-child(4), #Joblist>div:nth-child(5),
+#Joblist>div:nth-child(6),#Joblist>div:nth-child(7),#Joblist>div:nth-child(8),#Joblist>div:nth-child(9){
+  width: 80%;
+  height: 100px;
+  border: 1px solid #CCD1D9;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+#Joblist>div:nth-child(1)>div:nth-child(1),#Joblist>div:nth-child(2)>div:nth-child(1),
+#Joblist>div:nth-child(3)>div:nth-child(1),#Joblist>div:nth-child(4)>div:nth-child(1),
+#Joblist>div:nth-child(5)>div:nth-child(1),#Joblist>div:nth-child(6)>div:nth-child(1),
+#Joblist>div:nth-child(7)>div:nth-child(1),#Joblist>div:nth-child(8)>div:nth-child(1),
+#Joblist>div:nth-child(9)>div:nth-child(1){
+  width: 35%;
+  height: 100px;
+  /* border: 1px solid black; */
+  float: left;
+}
+
+#Joblist>div:nth-child(1)>button,#Joblist>div:nth-child(2)>button,#Joblist>div:nth-child(3)>button,
+#Joblist>div:nth-child(4)>button,#Joblist>div:nth-child(5)>button,#Joblist>div:nth-child(6)>button,
+#Joblist>div:nth-child(7)>button, #Joblist>div:nth-child(8)>button, #Joblist>div:nth-child(9)>button{
+  width: 10%;
+  height: 50px;
+  float: right;
+  margin-top: 1.8%;
+  color: white;
+  background-color: #D5162B;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+#Joblist>div:nth-child(1)>button:hover,#Joblist>div:nth-child(2)>button:hover,#Joblist>div:nth-child(3)>button:hover,
+#Joblist>div:nth-child(4)>button:hover,#Joblist>div:nth-child(5)>button:hover,#Joblist>div:nth-child(6)>button:hover,
+#Joblist>div:nth-child(7)>button:hover, #Joblist>div:nth-child(8)>button:hover, #Joblist>div:nth-child(9)>button:hover{
+  background-color: #9c0012;
+}
+.Job-box-main{
+  width: 100%;
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.Careerlbl1{
+  background-color: #E6F0F6;
+  color: #EA3448;
+  padding: 5px;
+}
+.Careerlbl2{
+  padding-left: 6%;
+  color: #EA3448;
+}
+.Careerpara{
+  width: 100%;
+  height: 130px;
+  border: 1px solid white;
+  background-color: white;
+}
+.Careerpara>p{
+  font-size: 22px;
+  text-align: left;
+  font-weight: normal;
+  margin-left: 20px;
+  color: #595E6E;
+}
+.Careervideo2{
+  width: 100%;
+  height: 700px;
+  /* border: 1px solid black; */
+  background-color: white; 
+}
+.Cvideo2{
+  margin-left: 8%;
+}
+.Careervideo2>p, strong{
+  font-size: 18px !important; 
+  text-align: left;
+  padding-left: 110px !important;
+  color: rgb(138, 138, 138);
+}
+.Glassdoorcareer{
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  border: 1px solid white;
+}
+.Glassdoorimg-container{
+  width: 42%;
+  height: 60px;
+  /* border: 1px solid black;  */
+  margin-top: 40px;
+  margin-left: 25%;
+  cursor: pointer;
+}
+.Careerbottombox,.Careerbottombox1{
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid black;  */
+}
+.Careerbottombox1{
+  background-color: white;
+  position: relative;
+  height: 150px;
+}
+.strong-career{
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid darksalmon; */
+  font-size: 18px !important; 
+  /* text-align: left; */
+  padding-left: 0px !important;
+  color: rgb(138, 138, 138);
+  background-color: white;
+}
+.Careerbottombox2{
+  width: 80%;
+  height: 120px;
+  /* border: 1px solid black; */
+  background-color: white;
+  position: absolute;
+  bottom: 90px;
+  right: 10%;
+}
+.Priacycareer{
+  width: 100%;
+  height: 100px;
+  /* margin-top: 60px; */
+  /* padding-top: 50px; */
+  /* border: 1px solid magenta; */
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  text-align: center;
+}
+.bottomlogocontainer{
+  width: 35%;
+  height: 80px;
+  /* border: 1px solid magenta; */
+  margin-left: 37%;
+}
+.bottomlogocontainer-p{
+  text-align: left;
+  font-size: 18px;
+  float: left;
+  color: #595E6E;
+  padding-top: 10px;
+}
+.bottomlogocontainer-img{
+  width: 50%;
+  height: 90%;
+  /* border: 1px solid rgb(31, 25, 31); */
+  float: left;
+  padding-left: 15px;
+}
+.Careerpiracy-P{
+  color: #595E6E;
+}
+.Careerpiracy-P:hover{
+  color:rgb(33, 168, 212)
+}
+/* Slide show used code from W3schools.com */
+.slideshow-container{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  /* position: relative;
+  margin: auto; */
+}
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+/* .active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */
+/* 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+} */
+
+/* Slideshow used code from W3schools.com ends here*/
 
 /*style  code for support doc page */
 #help-header {
@@ -1165,7 +1618,7 @@ p {
   cursor: pointer;
 }
 .help-cont {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 300px;
   background-color: #303e53;
@@ -1179,7 +1632,7 @@ p {
   margin-top: 20px;
 }
 .input-box-div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   height: 200px;
   margin: 50px auto;
@@ -1425,7 +1878,7 @@ p {
 /* <-------------------------style for pricing----------------> */
 
 * {
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -1437,12 +1890,11 @@ p {
   border: 1px solid red;
   height: 300px;
   width: 100%;
-  background-image: linear-gradient(red,yellow);
+  background-image: linear-gradient(red, yellow);
   color: white;
   text-align: center;
   padding-top: 100px;
 }
-
 
 .button_p {
   height: 50px;
@@ -1460,7 +1912,7 @@ p {
   border-radius: 5px;
 }
 
-#h1_p{
+#h1_p {
   padding-top: 450px;
   font-size: 18px;
   font-family: "Merriweather Sans", sans-serif;
@@ -1486,20 +1938,21 @@ p {
 .active,
 .accordian:hover {
   background-color: rgb(235, 231, 231);
-
 }
 
 .accordian::before {
-  content: '\02795';
-  height: 1px;width: 1px;
+  content: "\02795";
+  height: 1px;
+  width: 1px;
 }
 
 .active::before {
-  content: '\02796';
-  height: 1px;width: 1px;
+  content: "\02796";
+  height: 1px;
+  width: 1px;
 }
 
-.faq{
+.faq {
   width: 50%;
   margin: 0px auto;
 }
@@ -1518,23 +1971,24 @@ p {
   margin: 20px;
 }
 
-strong,.dark {
+strong,
+.dark {
   font-size: 30px;
   font-family: "Merriweather Sans", sans-serif;
 }
-#personal{
+#personal {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
   color: black;
   /* display: none; */
 }
-.back_color{
+.back_color {
   background-color: rgb(250, 249, 249);
   margin-top: 10px;
   height: 60%;
 }
-.icon{
+.icon {
   height: 20px;
   width: 20px;
   /* border: 1px solid red; */
@@ -1543,67 +1997,129 @@ strong,.dark {
   margin: 5px;
   /* float: left; */
 }
-.back_color>div{
-  margin: 10px; 
+.back_color > div {
+  margin: 10px;
   float: left;
 }
-.clear{
+.clear {
   clear: both;
 }
-.float_left{
+.float_left {
   float: left;
 }
-#slider{
+#slider {
   width: 80%;
 }
-#business{
+#business {
   color: black;
   display: none;
 }
-table{
+table {
   width: 100%;
   margin: 10px auto;
- 
 }
-.data_collection>thead{
+.data_collection > thead {
   color: gray;
 }
-.tryit{
+.tryit {
   height: 30px;
   border-radius: 5px;
   margin: 10px 0px;
 }
-.check_box{
-border: 0px;
+.check_box {
+  border: 0px;
 }
-.back_color_gray{
+.back_color_gray {
   background-color: rgb(255, 251, 251);
-
-
 }
-#agency{
+#agency {
   color: black;
   display: none;
 }
-.agency_img{
+.agency_img {
   height: 180px;
   width: 80%;
   margin: 10px auto;
 }
-.btn_learn{
+.btn_learn {
   width: 180px;
   margin: 0px 10px;
   border-radius: 5px;
   height: 30px;
   border: 1px solid gray;
 }
-#margin_20{
- margin-top: 20px;
+#margin_20 {
+  margin-top: 20px;
 }
-#below_data,#below_data1{
+#below_data,
+#below_data1 {
   margin-top: 40px;
 }
 
-#start,#try{
+#start,
+#try {
   margin-bottom: 20px;
 }
+
+
+
+/* style for privacy */
+
+.privacy_box{
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid red; */
+ justify-content: space-evenly;
+}
+.back_privacy{
+ background-color: rgb(243, 236, 236);
+}
+.half_box{
+  width: 40%;
+  /* border: 1px solid red; */
+}
+.padd_right{
+  
+  padding:20px;
+}
+.back_orange{
+  background-color: rgb(212, 174, 169);
+}
+.back_blue{
+  background-color: rgb(218, 231, 236);
+}
+.back_pink{
+  background-color: rgb(238, 230, 231);
+}
+.back_green{
+  background-color: rgb(175, 228, 207);
+}
+.back_yellow{
+  background-color: rgb(231, 218, 141);
+}
+.width_privacy{
+width: 50%;
+}
+.half_half_p{
+  width: 60%;
+  height: 100%;
+  
+}
+
+#privacy_label1,#privacy_label2,#privacy_label3,#privacy_label4,#privacy_label5,#privacy_label6{
+  display: none;
+}
+#flex_1{
+  display: flex;
+  /* flex: 1 1; */
+  justify-content:space-evenly;
+  align-items: center;
+
+}
+.font_big{
+  font-size: 60px;
+}
+.text_left{
+  text-align: left;
+}
+

@@ -1,4 +1,6 @@
+
 var button_more1=document.getElementById('more1');
+
     var button_more2=document.getElementById('more2');
     var button_more3=document.getElementById('more3');
     var button_more4=document.getElementById('more4');
