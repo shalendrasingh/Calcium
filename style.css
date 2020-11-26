@@ -2002,6 +2002,11 @@ strong {
   width: 120px;
   margin: 20px;
 }
+.big_heading {
+  text-align: center;
+  /* font-size: 30px; */
+  font-family: "Merriweather Sans", sans-serif;
+}
 
 strong,
 .dark {
@@ -2088,9 +2093,19 @@ table {
   margin-top: 40px;
 }
 
-#start,
+#start {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+}
 #try {
+  background-color: #d5354b;
   margin-bottom: 20px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
 }
 
 /* style for privacy */
