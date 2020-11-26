@@ -83,6 +83,10 @@
   text-decoration: none;
   color: black;
 }
+.h-try-btn > a {
+  color: white;
+  text-decoration: none;
+}
 .logoimg {
   width: 100%;
   height: 100%;
@@ -247,27 +251,31 @@
 }
 
 .notice {
-  width: 1580px;
-  height: 60px;
-  margin: 0px 0px;
-  margin-top: 100px;
+  width: 100%;
+  height: 40px;
+  margin-top: 120px;
   float: left;
   clear: left;
 }
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 390px;
-  height: 30px;
+  width: 30%;
   float: left;
-  margin-left: 120px;
 }
 
+.notice div:nth-child(1) > p,
+.notice div:nth-child(2) > p,
+.notice div:nth-child(3) > p {
+  font-size: 14px;
+  margin-left: 1%;
+}
 /* style code for icons */
 .icon-check {
-  font-size: 30px !important;
+  font-size: 24px !important;
   float: left;
-  margin: 20px;
+  margin: 10px;
+  margin-left: 200px;
   color: red;
 }
 
@@ -330,7 +338,8 @@
   margin-top: 20px;
 }
 .caption {
-  margin: 10px 300px;
+  font-size: 12px;
+  margin: 10px 200px;
 }
 
 /* body section one style code  */
@@ -466,63 +475,67 @@
                 code for body section boxes part 
  ============================================================*/
 .market-main-div {
-  width: 1140px;
-  height: 450px;
+  width: 75%;
+  height: 500px;
   margin: 30px auto;
   margin-left: 230px;
   float: left;
 }
 .market {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .product {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .uxdesign {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .build {
-  width: 240px;
+  width: 18%;
   height: 400px;
   float: left;
   margin: 20px 20px;
 }
 .market-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg");
 }
 .product-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg");
 }
 .uxdesign-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg");
 }
 .descp > h2 {
   padding: 0px;
   margin: 0px;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 5px !important;
+  margin-left: 10px !important;
 }
-.descp {
-  margin: 10px;
-}
+
 .build-desc {
   margin-top: 120px;
   text-align: left;
@@ -584,6 +597,10 @@ style code for get started section
   margin: 20px auto;
   border-radius: 50px;
   text-align: center;
+}
+.getStartBtn > a {
+  text-decoration: none;
+  color: white;
 }
 .tryItBtn {
   margin: 20px;
@@ -793,7 +810,8 @@ style code for get started section
   margin: 20px;
 }
 .getStartCaption {
-  margin: 10px 550px;
+  font-size: 14px;
+  margin: 10px 540px;
 }
 /* =============================================================================
 style code for Login section
@@ -1425,7 +1443,7 @@ p {
 /* <-------------------------style for pricing----------------> */
 
 * {
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -1437,12 +1455,11 @@ p {
   border: 1px solid red;
   height: 300px;
   width: 100%;
-  background-image: linear-gradient(red,yellow);
+  background-image: linear-gradient(red, yellow);
   color: white;
   text-align: center;
   padding-top: 100px;
 }
-
 
 .button_p {
   height: 50px;
@@ -1460,7 +1477,7 @@ p {
   border-radius: 5px;
 }
 
-#h1_p{
+#h1_p {
   padding-top: 450px;
   font-size: 18px;
   font-family: "Merriweather Sans", sans-serif;
@@ -1486,20 +1503,21 @@ p {
 .active,
 .accordian:hover {
   background-color: rgb(235, 231, 231);
-
 }
 
 .accordian::before {
-  content: '\02795';
-  height: 1px;width: 1px;
+  content: "\02795";
+  height: 1px;
+  width: 1px;
 }
 
 .active::before {
-  content: '\02796';
-  height: 1px;width: 1px;
+  content: "\02796";
+  height: 1px;
+  width: 1px;
 }
 
-.faq{
+.faq {
   width: 50%;
   margin: 0px auto;
 }
@@ -1518,23 +1536,24 @@ p {
   margin: 20px;
 }
 
-strong,.dark {
+strong,
+.dark {
   font-size: 30px;
   font-family: "Merriweather Sans", sans-serif;
 }
-#personal{
+#personal {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
   color: black;
   /* display: none; */
 }
-.back_color{
+.back_color {
   background-color: rgb(250, 249, 249);
   margin-top: 10px;
   height: 60%;
 }
-.icon{
+.icon {
   height: 20px;
   width: 20px;
   /* border: 1px solid red; */
@@ -1543,67 +1562,66 @@ strong,.dark {
   margin: 5px;
   /* float: left; */
 }
-.back_color>div{
-  margin: 10px; 
+.back_color > div {
+  margin: 10px;
   float: left;
 }
-.clear{
+.clear {
   clear: both;
 }
-.float_left{
+.float_left {
   float: left;
 }
-#slider{
+#slider {
   width: 80%;
 }
-#business{
+#business {
   color: black;
   display: none;
 }
-table{
+table {
   width: 100%;
   margin: 10px auto;
- 
 }
-.data_collection>thead{
+.data_collection > thead {
   color: gray;
 }
-.tryit{
+.tryit {
   height: 30px;
   border-radius: 5px;
   margin: 10px 0px;
 }
-.check_box{
-border: 0px;
+.check_box {
+  border: 0px;
 }
-.back_color_gray{
+.back_color_gray {
   background-color: rgb(255, 251, 251);
-
-
 }
-#agency{
+#agency {
   color: black;
   display: none;
 }
-.agency_img{
+.agency_img {
   height: 180px;
   width: 80%;
   margin: 10px auto;
 }
-.btn_learn{
+.btn_learn {
   width: 180px;
   margin: 0px 10px;
   border-radius: 5px;
   height: 30px;
   border: 1px solid gray;
 }
-#margin_20{
- margin-top: 20px;
+#margin_20 {
+  margin-top: 20px;
 }
-#below_data,#below_data1{
+#below_data,
+#below_data1 {
   margin-top: 40px;
 }
 
-#start,#try{
+#start,
+#try {
   margin-bottom: 20px;
 }
