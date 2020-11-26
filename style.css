@@ -81,13 +81,21 @@
   text-decoration: none;
   color: black;
 }
-/* .logoimg {
+
+.h-try-btn > a {
+  color: white;
+  text-decoration: none;
+}
+.logoimg {
   width: 100%;
   height: 100%;
-} */
+}
 
 /* header drop down meeting */
-.drop-btn, .drop-btn1, .drop-btn2, .drop-btn3 {
+.drop-btn,
+.drop-btn1,
+.drop-btn2,
+.drop-btn3 {
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -245,27 +253,31 @@
 }
 
 .notice {
-  width: 1580px;
-  height: 60px;
-  margin: 0px 0px;
-  margin-top: 100px;
+  width: 100%;
+  height: 40px;
+  margin-top: 120px;
   float: left;
   clear: left;
 }
 .notice div:nth-child(1),
 .notice div:nth-child(2),
 .notice div:nth-child(3) {
-  width: 390px;
-  height: 30px;
+  width: 30%;
   float: left;
-  margin-left: 120px;
 }
 
+.notice div:nth-child(1) > p,
+.notice div:nth-child(2) > p,
+.notice div:nth-child(3) > p {
+  font-size: 14px;
+  margin-left: 1%;
+}
 /* style code for icons */
 .icon-check {
-  font-size: 30px !important;
+  font-size: 24px !important;
   float: left;
-  margin: 20px;
+  margin: 10px;
+  margin-left: 200px;
   color: red;
 }
 
@@ -328,7 +340,8 @@
   margin-top: 20px;
 }
 .caption {
-  margin: 10px 300px;
+  font-size: 12px;
+  margin: 10px 200px;
 }
 
 /* body section one style code  */
@@ -464,63 +477,67 @@
                 code for body section boxes part 
  ============================================================*/
 .market-main-div {
-  width: 1140px;
-  height: 450px;
+  width: 75%;
+  height: 500px;
   margin: 30px auto;
   margin-left: 230px;
   float: left;
 }
 .market {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .product {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .uxdesign {
-  width: 200px;
-  height: 400px;
+  width: 18%;
+  height: 420px;
   float: left;
   margin: 20px 40px;
 }
 .build {
-  width: 240px;
+  width: 18%;
   height: 400px;
   float: left;
   margin: 20px 20px;
 }
 .market-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-marketers.jpg");
 }
 .product-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-product-managers.jpg");
 }
 .uxdesign-img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("https://static-cms.hotjar.com/original_images/brand-personas-ux-designers.jpg");
 }
 .descp > h2 {
   padding: 0px;
   margin: 0px;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 5px !important;
+  margin-left: 10px !important;
 }
-.descp {
-  margin: 10px;
-}
+
 .build-desc {
   margin-top: 120px;
   text-align: left;
@@ -582,6 +599,10 @@ style code for get started section
   margin: 20px auto;
   border-radius: 50px;
   text-align: center;
+}
+.getStartBtn > a {
+  text-decoration: none;
+  color: white;
 }
 .tryItBtn {
   margin: 20px;
@@ -652,16 +673,16 @@ p {
   font-size: 18px;
   color: white;
   writing-mode: vertical-rl;
-} 
+}
 .Feedbackimg {
   margin-top: 6px;
   margin-left: 10px;
   width: 25px;
   height: 30px;
-} 
+}
 
 #Feedback:hover {
-  box-shadow:20px 20px 50px 15px grey;
+  box-shadow: 20px 20px 50px 15px grey;
 }
 .imgbox {
   width: 100%;
@@ -791,7 +812,8 @@ style code for get started section
   margin: 20px;
 }
 .getStartCaption {
-  margin: 10px 550px;
+  font-size: 14px;
+  margin: 10px 540px;
 }
 /* =============================================================================
 style code for Login section
@@ -1116,7 +1138,7 @@ p {
 /* =======================================================================================================
                 code for Careers part 
  ============================================================*/
-#Careersmaincontainer{
+#Careersmaincontainer {
   width: 100%;
   height: 100%;
   /* border: 1px solid black; */
@@ -1125,27 +1147,29 @@ p {
   background-repeat: repeat;
   background-attachment: fixed;
 }
-.Careersnavbar{
+.Careersnavbar {
   width: 100%;
   height: 80px;
   background-color: white;
   display: flex;
 }
-.Careersnavbar>div:nth-child(1){
+.Careersnavbar > div:nth-child(1) {
   margin-left: 5%;
   width: 10%;
   height: 90%;
   /* border: 1px solid black; */
 }
-.Careersnavbar>div:nth-child(2), .Careersnavbar>div:nth-child(3), 
-.Careersnavbar>div:nth-child(4), .Careersnavbar>div:nth-child(5){
+.Careersnavbar > div:nth-child(2),
+.Careersnavbar > div:nth-child(3),
+.Careersnavbar > div:nth-child(4),
+.Careersnavbar > div:nth-child(5) {
   margin-top: 2%;
   margin-left: 2%;
   width: 6%;
   height: 60%;
   /* border: 1px solid black; */
 }
-.Careersnavbutton{
+.Careersnavbutton {
   margin-left: 25%;
   margin-top: 1.5%;
   height: 65%;
@@ -1158,10 +1182,12 @@ p {
   border-radius: 5px;
   color: white;
 }
-.Careersnavbutton:hover{
+.Careersnavbutton:hover {
   background-color: red;
 }
-.Careersnavbar>div:nth-child(7), .Careersnavbar>div:nth-child(8), .Careersnavbar>div:nth-child(9){
+.Careersnavbar > div:nth-child(7),
+.Careersnavbar > div:nth-child(8),
+.Careersnavbar > div:nth-child(9) {
   margin-top: 3%;
   margin-left: 2%;
   width: 2%;
@@ -1169,12 +1195,12 @@ p {
   border-radius: 5px;
   /* border: 1px solid black; */
 }
-.Careers-a{
+.Careers-a {
   text-decoration: none;
   font-size: 20px;
   color: rgb(252, 106, 106);
 }
-.Careers-a:hover{
+.Careers-a:hover {
   color: rgb(255, 0, 0);
 }
 /* .Careersnavbuttonimg{
@@ -1182,40 +1208,40 @@ p {
   height: 100%;
   margin-left: 20px;
 } */
-.Careerlab{
+.Careerlab {
   font-size: 15px;
   cursor: pointer;
   margin-top: 10px;
 }
-#Careerculture{
+#Careerculture {
   margin-top: 300px;
   width: 100%;
   height: 700px;
   background-color: white;
 }
-.Careers-h1{
+.Careers-h1 {
   padding-top: 80px;
   font-size: 30px;
   text-align: center;
 }
-#Careerculture>p{
+#Careerculture > p {
   font-size: 18px;
   text-align: left;
   padding-left: 20px;
   color: rgb(138, 138, 138);
 }
-.Careerli{
+.Careerli {
   font-size: 18px;
   text-align: left;
-  color: rgb(138, 138, 138); 
+  color: rgb(138, 138, 138);
 }
-.Careerhref{
+.Careerhref {
   color: rgb(253, 72, 72);
 }
-.Careerhref:hover{
+.Careerhref:hover {
   color: rgb(255, 0, 0);
 }
-#Careersperk{
+#Careersperk {
   width: 100%;
   height: 550px;
   background-color: wheat;
@@ -1224,161 +1250,186 @@ p {
   background-repeat: no-repeat;
   /* filter: brightness(10%); */
 }
-#Careersperk>h2{
+#Careersperk > h2 {
   margin: 0px;
   font-size: 40px;
   text-align: center;
   color: #ffffff;
 }
-#Careersperk>p{
+#Careersperk > p {
   color: rgb(160, 160, 160);
 }
-.li1,.li2,.li3{
+.li1,
+.li2,
+.li3 {
   float: left;
   font-size: 20px;
   line-height: 50px;
   color: white;
-  padding-left:8%;
+  padding-left: 8%;
 }
-.Lovework{
+.Lovework {
   margin-top: 0px;
   text-align: center;
   width: 100%;
   height: 80px;
   background-color: white;
 }
-.Lovework>strong{
+.Lovework > strong {
   font-size: 30px;
 }
-.Lovework>strong{
+.Lovework > strong {
   margin-right: 6%;
 }
-.Lovework>h3{
+.Lovework > h3 {
   color: grey;
 }
-.Dreamjob{
+.Dreamjob {
   width: 100%;
   height: 100px;
   background-color: white;
   /* border: 1px solid black; */
 }
-.Careervideo{
+.Careervideo {
   width: 100%;
   height: 700px;
   background-color: white;
   /* border: 1px solid black; */
 }
-.Careervideo>iframe{
+.Careervideo > iframe {
   margin-left: 5%;
 }
-.Careerrecruitment{
- width: 100%;
- height: 200px;
- /* border: 1px solid black; */
+.Careerrecruitment {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid black; */
 }
-.Careerrecruitmentimg{
+.Careerrecruitmentimg {
   width: 100%;
   height: 100%;
 }
-#Joblist{
+#Joblist {
   width: 100%;
   height: 1200px;
   background-color: white;
 }
-#Joblist>div:nth-child(1){
+#Joblist > div:nth-child(1) {
   width: 80%;
   height: 100px;
-  border: 1px solid #CCD1D9;
+  border: 1px solid #ccd1d9;
   margin: auto;
   border-radius: 5px;
 }
-#Joblist>div:nth-child(2), #Joblist>div:nth-child(3), #Joblist>div:nth-child(4), #Joblist>div:nth-child(5),
-#Joblist>div:nth-child(6),#Joblist>div:nth-child(7),#Joblist>div:nth-child(8),#Joblist>div:nth-child(9){
+#Joblist > div:nth-child(2),
+#Joblist > div:nth-child(3),
+#Joblist > div:nth-child(4),
+#Joblist > div:nth-child(5),
+#Joblist > div:nth-child(6),
+#Joblist > div:nth-child(7),
+#Joblist > div:nth-child(8),
+#Joblist > div:nth-child(9) {
   width: 80%;
   height: 100px;
-  border: 1px solid #CCD1D9;
+  border: 1px solid #ccd1d9;
   margin: auto;
   margin-top: 30px;
   border-radius: 5px;
 }
-#Joblist>div:nth-child(1)>div:nth-child(1),#Joblist>div:nth-child(2)>div:nth-child(1),
-#Joblist>div:nth-child(3)>div:nth-child(1),#Joblist>div:nth-child(4)>div:nth-child(1),
-#Joblist>div:nth-child(5)>div:nth-child(1),#Joblist>div:nth-child(6)>div:nth-child(1),
-#Joblist>div:nth-child(7)>div:nth-child(1),#Joblist>div:nth-child(8)>div:nth-child(1),
-#Joblist>div:nth-child(9)>div:nth-child(1){
+#Joblist > div:nth-child(1) > div:nth-child(1),
+#Joblist > div:nth-child(2) > div:nth-child(1),
+#Joblist > div:nth-child(3) > div:nth-child(1),
+#Joblist > div:nth-child(4) > div:nth-child(1),
+#Joblist > div:nth-child(5) > div:nth-child(1),
+#Joblist > div:nth-child(6) > div:nth-child(1),
+#Joblist > div:nth-child(7) > div:nth-child(1),
+#Joblist > div:nth-child(8) > div:nth-child(1),
+#Joblist > div:nth-child(9) > div:nth-child(1) {
   width: 35%;
   height: 100px;
   /* border: 1px solid black; */
   float: left;
 }
 
-#Joblist>div:nth-child(1)>button,#Joblist>div:nth-child(2)>button,#Joblist>div:nth-child(3)>button,
-#Joblist>div:nth-child(4)>button,#Joblist>div:nth-child(5)>button,#Joblist>div:nth-child(6)>button,
-#Joblist>div:nth-child(7)>button, #Joblist>div:nth-child(8)>button, #Joblist>div:nth-child(9)>button{
+#Joblist > div:nth-child(1) > button,
+#Joblist > div:nth-child(2) > button,
+#Joblist > div:nth-child(3) > button,
+#Joblist > div:nth-child(4) > button,
+#Joblist > div:nth-child(5) > button,
+#Joblist > div:nth-child(6) > button,
+#Joblist > div:nth-child(7) > button,
+#Joblist > div:nth-child(8) > button,
+#Joblist > div:nth-child(9) > button {
   width: 10%;
   height: 50px;
   float: right;
   margin-top: 1.8%;
   color: white;
-  background-color: #D5162B;
+  background-color: #d5162b;
   border: none;
   border-radius: 5%;
   cursor: pointer;
 }
-#Joblist>div:nth-child(1)>button:hover,#Joblist>div:nth-child(2)>button:hover,#Joblist>div:nth-child(3)>button:hover,
-#Joblist>div:nth-child(4)>button:hover,#Joblist>div:nth-child(5)>button:hover,#Joblist>div:nth-child(6)>button:hover,
-#Joblist>div:nth-child(7)>button:hover, #Joblist>div:nth-child(8)>button:hover, #Joblist>div:nth-child(9)>button:hover{
+#Joblist > div:nth-child(1) > button:hover,
+#Joblist > div:nth-child(2) > button:hover,
+#Joblist > div:nth-child(3) > button:hover,
+#Joblist > div:nth-child(4) > button:hover,
+#Joblist > div:nth-child(5) > button:hover,
+#Joblist > div:nth-child(6) > button:hover,
+#Joblist > div:nth-child(7) > button:hover,
+#Joblist > div:nth-child(8) > button:hover,
+#Joblist > div:nth-child(9) > button:hover {
   background-color: #9c0012;
 }
-.Job-box-main{
+.Job-box-main {
   width: 100%;
   height: 25px;
   /* border: 1px solid black; */
 }
-.Careerlbl1{
-  background-color: #E6F0F6;
-  color: #EA3448;
+.Careerlbl1 {
+  background-color: #e6f0f6;
+  color: #ea3448;
   padding: 5px;
 }
-.Careerlbl2{
+.Careerlbl2 {
   padding-left: 6%;
-  color: #EA3448;
+  color: #ea3448;
 }
-.Careerpara{
+.Careerpara {
   width: 100%;
   height: 130px;
   border: 1px solid white;
   background-color: white;
 }
-.Careerpara>p{
+.Careerpara > p {
   font-size: 22px;
   text-align: left;
   font-weight: normal;
   margin-left: 20px;
-  color: #595E6E;
+  color: #595e6e;
 }
-.Careervideo2{
+.Careervideo2 {
   width: 100%;
   height: 700px;
   /* border: 1px solid black; */
-  background-color: white; 
+  background-color: white;
 }
-.Cvideo2{
+.Cvideo2 {
   margin-left: 8%;
 }
-.Careervideo2>p, strong{
-  font-size: 18px !important; 
+.Careervideo2 > p,
+strong {
+  font-size: 18px !important;
   text-align: left;
   padding-left: 110px !important;
   color: rgb(138, 138, 138);
 }
-.Glassdoorcareer{
+.Glassdoorcareer {
   width: 100%;
   height: 130px;
   background-color: white;
   border: 1px solid white;
 }
-.Glassdoorimg-container{
+.Glassdoorimg-container {
   width: 42%;
   height: 60px;
   /* border: 1px solid black;  */
@@ -1386,27 +1437,28 @@ p {
   margin-left: 25%;
   cursor: pointer;
 }
-.Careerbottombox,.Careerbottombox1{
+.Careerbottombox,
+.Careerbottombox1 {
   width: 100%;
   height: 100px;
   /* border: 1px solid black;  */
 }
-.Careerbottombox1{
+.Careerbottombox1 {
   background-color: white;
   position: relative;
   height: 150px;
 }
-.strong-career{
+.strong-career {
   width: 100%;
   height: 80px;
   /* border: 1px solid darksalmon; */
-  font-size: 18px !important; 
+  font-size: 18px !important;
   /* text-align: left; */
   padding-left: 0px !important;
   color: rgb(138, 138, 138);
   background-color: white;
 }
-.Careerbottombox2{
+.Careerbottombox2 {
   width: 80%;
   height: 120px;
   /* border: 1px solid black; */
@@ -1415,7 +1467,7 @@ p {
   bottom: 90px;
   right: 10%;
 }
-.Priacycareer{
+.Priacycareer {
   width: 100%;
   height: 100px;
   /* margin-top: 60px; */
@@ -1426,34 +1478,34 @@ p {
   top: 30px;
   text-align: center;
 }
-.bottomlogocontainer{
+.bottomlogocontainer {
   width: 35%;
   height: 80px;
   /* border: 1px solid magenta; */
   margin-left: 37%;
 }
-.bottomlogocontainer-p{
+.bottomlogocontainer-p {
   text-align: left;
   font-size: 18px;
   float: left;
-  color: #595E6E;
+  color: #595e6e;
   padding-top: 10px;
 }
-.bottomlogocontainer-img{
+.bottomlogocontainer-img {
   width: 50%;
   height: 90%;
   /* border: 1px solid rgb(31, 25, 31); */
   float: left;
   padding-left: 15px;
 }
-.Careerpiracy-P{
-  color: #595E6E;
+.Careerpiracy-P {
+  color: #595e6e;
 }
-.Careerpiracy-P:hover{
-  color:rgb(33, 168, 212)
+.Careerpiracy-P:hover {
+  color: rgb(33, 168, 212);
 }
 /* Slide show used code from W3schools.com */
-.slideshow-container{
+.slideshow-container {
   width: 100%;
   height: 200px;
   background-color: white;
@@ -1858,7 +1910,7 @@ p {
 /* <-------------------------style for pricing----------------> */
 
 * {
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -1870,12 +1922,11 @@ p {
   border: 1px solid red;
   height: 300px;
   width: 100%;
-  background-image: linear-gradient(red,yellow);
+  background-image: linear-gradient(red, yellow);
   color: white;
   text-align: center;
   padding-top: 100px;
 }
-
 
 .button_p {
   height: 50px;
@@ -1893,7 +1944,7 @@ p {
   border-radius: 5px;
 }
 
-#h1_p{
+#h1_p {
   padding-top: 450px;
   font-size: 18px;
   font-family: "Merriweather Sans", sans-serif;
@@ -1919,20 +1970,21 @@ p {
 .active,
 .accordian:hover {
   background-color: rgb(235, 231, 231);
-
 }
 
 .accordian::before {
-  content: '\02795';
-  height: 1px;width: 1px;
+  content: "\02795";
+  height: 1px;
+  width: 1px;
 }
 
 .active::before {
-  content: '\02796';
-  height: 1px;width: 1px;
+  content: "\02796";
+  height: 1px;
+  width: 1px;
 }
 
-.faq{
+.faq {
   width: 50%;
   margin: 0px auto;
 }
@@ -1951,23 +2003,24 @@ p {
   margin: 20px;
 }
 
-strong,.dark {
+strong,
+.dark {
   font-size: 30px;
   font-family: "Merriweather Sans", sans-serif;
 }
-#personal{
+#personal {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
   color: black;
   /* display: none; */
 }
-.back_color{
+.back_color {
   background-color: rgb(250, 249, 249);
   margin-top: 10px;
   height: 60%;
 }
-.icon{
+.icon {
   height: 20px;
   width: 20px;
   /* border: 1px solid red; */
@@ -1976,127 +2029,128 @@ strong,.dark {
   margin: 5px;
   /* float: left; */
 }
-.back_color>div{
-  margin: 10px; 
+.back_color > div {
+  margin: 10px;
   float: left;
 }
-.clear{
+.clear {
   clear: both;
 }
-.float_left{
+.float_left {
   float: left;
 }
-#slider{
+#slider {
   width: 80%;
 }
-#business{
+#business {
   color: black;
   display: none;
 }
-table{
+table {
   width: 100%;
   margin: 10px auto;
- 
 }
-.data_collection>thead{
+.data_collection > thead {
   color: gray;
 }
-.tryit{
+.tryit {
   height: 30px;
   border-radius: 5px;
   margin: 10px 0px;
 }
-.check_box{
-border: 0px;
+.check_box {
+  border: 0px;
 }
-.back_color_gray{
+.back_color_gray {
   background-color: rgb(255, 251, 251);
 }
-#agency{
+#agency {
   color: black;
   display: none;
 }
-.agency_img{
+.agency_img {
   height: 180px;
   width: 80%;
   margin: 10px auto;
 }
-.btn_learn{
+.btn_learn {
   width: 180px;
   margin: 0px 10px;
   border-radius: 5px;
   height: 30px;
   border: 1px solid gray;
 }
-#margin_20{
- margin-top: 20px;
+#margin_20 {
+  margin-top: 20px;
 }
-#below_data,#below_data1{
+#below_data,
+#below_data1 {
   margin-top: 40px;
 }
 
-#start,#try{
+#start,
+#try {
   margin-bottom: 20px;
 }
 
-
-
 /* style for privacy */
 
-.privacy_box{
+.privacy_box {
   height: 700px;
   width: 100%;
   /* border: 1px solid red; */
- justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.back_privacy{
- background-color: rgb(243, 236, 236);
+.back_privacy {
+  background-color: rgb(243, 236, 236);
 }
-.half_box{
+.half_box {
   width: 40%;
   /* border: 1px solid red; */
 }
-.padd_right{
-  
-  padding:20px;
+.padd_right {
+  padding: 20px;
 }
-.back_orange{
+.back_orange {
   background-color: rgb(212, 174, 169);
 }
-.back_blue{
+.back_blue {
   background-color: rgb(218, 231, 236);
 }
-.back_pink{
+.back_pink {
   background-color: rgb(238, 230, 231);
 }
-.back_green{
+.back_green {
   background-color: rgb(175, 228, 207);
 }
-.back_yellow{
+.back_yellow {
   background-color: rgb(231, 218, 141);
 }
-.width_privacy{
-width: 50%;
+.width_privacy {
+  width: 50%;
 }
-.half_half_p{
+.half_half_p {
   width: 60%;
   height: 100%;
-  
 }
 
-#privacy_label1,#privacy_label2,#privacy_label3,#privacy_label4,#privacy_label5,#privacy_label6{
+#privacy_label1,
+#privacy_label2,
+#privacy_label3,
+#privacy_label4,
+#privacy_label5,
+#privacy_label6 {
   display: none;
 }
-#flex_1{
+#flex_1 {
   display: flex;
   /* flex: 1 1; */
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
-
 }
-.font_big{
+.font_big {
   font-size: 60px;
 }
-.text_left{
+.text_left {
   text-align: left;
 }
