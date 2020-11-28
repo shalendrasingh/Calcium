@@ -87,7 +87,7 @@
 
  👤 Shalendra Singh
  <ul>
- <li>Github : salunkhesuchita
- <li>Email : salunkhesuchita3@gmail.com
+ <li>Github : shalendrasingh
+ <li>Email : shalendrasingh.aec@gmail.com
  </ul>
 
